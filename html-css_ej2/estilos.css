@@ -1,0 +1,12 @@
+table , tr , th , td{
+    border: 1px black solid;
+}
+
+th{
+    background-color: darkgrey;
+}
+
+
+img{
+    height: 100px;
+}
