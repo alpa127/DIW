@@ -1,0 +1,15 @@
+h1{
+    color: #d60f0f;
+}
+
+h2{
+    background-color: rgb(214, 204, 15);
+}
+
+p{
+    background-color: hsl(141, 95%, 56%);
+}
+
+img{
+    height: 300px;
+}
