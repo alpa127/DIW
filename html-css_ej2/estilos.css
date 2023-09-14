@@ -1,5 +1,6 @@
 table , tr , th , td{
     border: 1px black solid;
+    text-align: center;
 }
 
 th{
@@ -9,4 +10,22 @@ th{
 
 img{
     height: 100px;
+    padding: 10px;
+}
+
+a:hover{
+    
+    background-color: yellow;
+    cursor: pointer;
+    padding: 5px, 10px;
+}
+
+#a1:hover{
+    background-color: green;
+    cursor: pointer;
+    padding: 5px, 10px;
+}
+
+a:link,a:visited{
+    color:  blue;
 }
