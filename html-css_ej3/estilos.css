@@ -1,0 +1,40 @@
+table{
+    text-align: center;
+    border-spacing: 3px;
+    width: 50%;
+    
+}
+
+th{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: aqua;
+}
+td{
+    border: 1px solid black;
+    background-color: beige
+}
+
+#spain{
+    background: linear-gradient(red ,yellow,yellow,red);
+    cursor: pointer;
+}
+#argentina{
+    background: linear-gradient(rgb(0, 255, 255),white,white,rgb(0, 255, 255));
+    cursor: pointer;
+}
+
+#france{
+    background: linear-gradient(to left, blue,white ,white,red);
+    cursor: pointer;
+}
+
+#spain:active,#argentina:active,#france:active{
+    background-image: none;
+    background-color: white;
+}
+
+td:hover{
+    background: coral;
+}
