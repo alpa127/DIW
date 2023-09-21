@@ -30,6 +30,10 @@ td{
     cursor: pointer;
 }
 
+#malawi{
+    background: linear-gradient(black,red,red,green);
+}
+
 #spain:active,#argentina:active,#france:active{
     background-image: none;
     background-color: white;
