@@ -1,6 +1,6 @@
 table{
     text-align: center;
-    border-spacing: 3px;
+    border-spacing: 5px;
     width: 50%;
     
 }
@@ -26,7 +26,7 @@ td{
 }
 
 #france{
-    background: linear-gradient(to left, blue,white ,white,red);
+    background: linear-gradient(to right, blue,white ,white,red);
     cursor: pointer;
 }
 
