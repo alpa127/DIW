@@ -31,7 +31,7 @@ td{
 }
 
 #malawi{
-    background: linear-gradient(black,red,red,green);
+    background: linear-gradient(black,black,red,red,green,green);
 }
 
 #spain:active,#argentina:active,#france:active{
