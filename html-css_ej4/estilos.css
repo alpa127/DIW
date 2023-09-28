@@ -1,4 +1,4 @@
-.fixed{
+#aqua{
     position: fixed;
     height: 100px;
     width: 40px;
@@ -12,7 +12,7 @@
     height: 50px;
     width: 500px;
     position: relative;
-    top: 27px;
+    top: 20px;
     left: 200px;
     background-color: blueviolet;
 }
@@ -24,6 +24,38 @@
     position: sticky;
     top: 0px;
 }
+#verde{
+    width: 100%;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+}
 #amarillo{
-    
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: yellow;
+    position: absolute;
+    right: 80px;   
+}
+
+#rojo{
+    width: 200px;
+    height: 80px;
+    background-color: red;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: absolute;
+    right: 80px;
+    top: 30px;
+}
+
+#azuloscuro{
+    width: 40px;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    right: 130px;
+    top: 10px;
 }
