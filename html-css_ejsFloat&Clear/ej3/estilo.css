@@ -1,0 +1,25 @@
+.div1{
+    background-color: pink;
+    float: right;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.div2{
+    background-color: aqua;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+.div3{
+    background-color: coral;
+}
+p{
+    float: left;
+}
