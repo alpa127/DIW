@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+.divP{
+    text-align: center;
+}
+.divP{
+    content: " ";
+    clear: both;
+    display: table;
+}
+.divimg{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+img{
+    width: 100%;
+}
+
+.footer{
+    background-color: grey; 
+    padding: 15px;
+    text-align: center;
+}
+.p1{
+    text-align: left;
+}
+.p2{
+    text-align: right;
+}
+
