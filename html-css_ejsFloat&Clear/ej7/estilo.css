@@ -1,7 +1,8 @@
 *{
     box-sizing: border-box;
 }
-.header{
+.header,
+.footer{
     background-color: gray;
     color: white;
     padding: 20px;
@@ -27,8 +28,4 @@
     display: block;
 }
 
-.footer{
-    display: block;
-    background-color: gray;
-    padding: 15px;
-}
+
