@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 h1, h2, h3, h4, h5, div {
     text-transform: uppercase;
     font-weight: bold;
@@ -41,49 +44,45 @@ div {
 
 .header {
     background: #FF9C56;
-    overflow: auto;
 }
 
 .logo {
     background: #FF4D79;
-    float: left;
 }
 
 .navigation {
     background: #E85F43;
-    float: right;
-    width: 70%;
 }
 
 .sidebar {
     background: #FFBE56;
     float: left;
-    width: 25%;
-    height: 300px;
-    margin-right: 30px;
+    width: 33.33%;
+    height: 350px;
 }
 
 .main-content {
     background: #88ABC2;
     color: #fff;
-    overflow: auto;
+    float: left;
+    width: 33.33%;
+    height: 350px;
 }
 
 .sub-content {
     background: #49708A;
-    float: right;
-    width: 70%;
-    margin-bottom: 20px;
+    float: left;
+    width: 33.33%;
+    height: 350px;
 }
 
 .sub-content-2 {
     background: #355163;
-    float: right;
-    width: 70%;
 }
 
 .footer {
     background: #AAD637;
+    padding-top: 10px;
 }
 
 .post {

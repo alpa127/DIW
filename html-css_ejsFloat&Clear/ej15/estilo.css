@@ -52,34 +52,23 @@ div {
 .navigation {
     background: #E85F43;
     float: right;
-    width: 70%;
 }
 
 .sidebar {
     background: #FFBE56;
-    float: left;
-    width: 25%;
-    height: 300px;
-    margin-right: 30px;
 }
 
 .main-content {
     background: #88ABC2;
     color: #fff;
-    overflow: auto;
 }
 
 .sub-content {
     background: #49708A;
-    float: right;
-    width: 70%;
-    margin-bottom: 20px;
 }
 
 .sub-content-2 {
     background: #355163;
-    float: right;
-    width: 70%;
 }
 
 .footer {
@@ -89,16 +78,22 @@ div {
 .post {
     background: #AAD637;
     margin-bottom: 20px;
+    overflow: auto;
 }
 
 .image {
     background: #8EB22E;
+    float: left;
+    width: 20%;
+    height: 150px;
 }
 
 .post_excerpt {
     background: #708C24;
     padding: 20px;
     margin: 0;
+    width: 70%;
+    float: right;
 }
 
 .widget {

@@ -32,6 +32,8 @@ div {
 
 .container {
     background: #EBF7F8;
+    width: 1024px;
+    margin: 0 auto;
 }
 
 .container.index {
@@ -58,7 +60,7 @@ div {
     background: #FFBE56;
     float: left;
     width: 20%;
-    margin: 5px 50px 5px 5px;
+    margin: 5px 40px 5px 5px;
     height: 300px;
 }
 
