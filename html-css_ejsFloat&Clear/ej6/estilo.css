@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+.div1{
+    width: 25%;
+    float: left;
+}
+img{
+    max-width: 100%;
+}
+.div2{
+    width: 75%;
+    padding-left: 10px;
+    float: right;
+}
