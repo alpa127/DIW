@@ -3,30 +3,22 @@
 }
 
 .div1{
-    padding: 20px;
+
     background-color: aqua;
-    text-align: center;
-    width: 25%;
-    float: left;
+
 }
 .div2{
-    padding: 20px;
+
     background-color: beige;
-    text-align: center;
-    width: 25%;
-    float: left;
+
 }
 .div3{
-    padding: 20px;
+
     background-color: coral;
-    text-align: center;
-    width: 25%;
-    float: left;
+
 }
 .div4{
-    padding: 20px;
+
     background-color: rgba(76, 78, 236, 0.884);
-    text-align: center;
-    width: 25%;
-    float: left;
+   
 }

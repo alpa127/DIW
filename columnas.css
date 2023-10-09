@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
 .col-1 {
   width: 8.33%;
 }
@@ -38,9 +50,3 @@
 .col-12 {
   width: 100%;
 }
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-    border: 1px solid red;
-  }
