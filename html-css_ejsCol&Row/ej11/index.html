@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Float&Clear</title>
     <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="columnas.css">
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="logo">logo</div>
-        <div class="navigation">navigation</div>
+    <div class="row container">
+      <div class="col-12 header">
+        <div class="col-4">
+          <div class="logo">logo</div>
+        </div>
+        <div class="col-8">
+          <div class="navigation">navigation</div>
+        </div>
+      <div class="col-12 main-content">
+        <div class="col-4">
+          <div class="col-12 sidebar">sidebar</div>
+        </div>
+        <div class="col-8 sub-content">sub content</div>
+        <div class="col-8 sub-content-2">sub content 2</div>
       </div>
-      <div class="main-content">
-        <div class="sidebar">sidebar</div>
-        <div class="sub-content">sub content</div>
-        <div class="sub-content-2">sub content 2</div>
-      </div>
-      <div class="footer">footer</div>
+      <div class="col-12 footer">footer</div>
     </div>
   </body>
 </html>
