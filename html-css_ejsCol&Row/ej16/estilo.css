@@ -3,19 +3,17 @@
     font-size: 40px;
     color: #9bc33f;
     padding-top: 10px;
-    float: left;
 }
 
 /* Urgent/red */
 .icon.urgent {
     color: rgb(249, 56, 49);
-    float: left;
+
 }
 
 /* Medium/orange */
 .icon.medium {
     color: #ff753e;
-    float: left;
 }
 
 /* Title */
@@ -24,7 +22,6 @@
     line-height: 50px;
     font-weight: normal;
     font-family: "PlutoSansExtraLight";
-    font-size: 30px;
 }
 
 /* Date */

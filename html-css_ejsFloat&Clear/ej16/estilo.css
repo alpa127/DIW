@@ -1,57 +1,46 @@
-/* Priority icons */
 .icon {
     font-size: 40px;
     color: #9bc33f;
     padding-top: 10px;
-    float: left;
-}
-
-/* Urgent/red */
-.icon.urgent {
+  }
+  
+  /* Urgent/red */
+  .icon.urgent {
     color: rgb(249, 56, 49);
-    float: left;
-}
-
-/* Medium/orange */
-.icon.medium {
+  }
+  
+  /* Medium/orange */
+  .icon.medium {
     color: #ff753e;
-    float: left;
-}
-
-/* Title */
-.todo-title {
+  }
+  
+  /* Title */
+  .todo-title {
     text-transform: none;
     line-height: 50px;
     font-weight: normal;
     font-family: "PlutoSansExtraLight";
-    font-size: 30px;
-}
-
-/* Date */
-.todo-date {
+  }
+  
+  /* Date */
+  .todo-date {
     color: #bbb;
     font-weight: normal;
     font-size: 14px;
     text-transform: none;
     font-family: "PlutoSansRegular";
-    
-}
-
-/* Override other float exercise styles */
-div {
+  }
+  
+  /* Override other float exercise styles */
+  div {
     padding: 0;
-}
-
-body {
+  }
+  
+  body {
     background: #eee;
-}
-
-.container {
+  }
+  
+  .container {
     background: transparent;
     padding: 40px 0;
-}
-
-.check{
-    float: right;
-    top: 50%;
-}
+  }
