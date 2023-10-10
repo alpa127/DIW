@@ -13,7 +13,7 @@
     display: table;
 }
 .divP{
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     display: block;
 }
 .columna{
@@ -24,8 +24,8 @@
     
 }
 .div2{
-    width: 70%;
-    margin-left: 5%;
+    /* width: 70%; */
+    /* margin-left: 5%; */
 }
  .div3,
 .div4,

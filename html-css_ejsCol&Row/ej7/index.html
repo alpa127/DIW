@@ -5,34 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Float & Clear</title>
     <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="columnas.css" />
   </head>
   <body>
-    <div class="header"><h1>Cabecera</h1></div>
-
-    <div class="divP">
-      <div class="columna div1">
-        <div class="div3">Lorem</div>
-        <div class="div4">Ipsum</div>
-        <div class="div5">Dolor</div>
-        <div class="div6">Sit</div>
-      </div>
-      <div class="columna div2">
-        <h1>Lorem ipsum</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          possimus magnam, perferendis non ipsum odit ducimus doloremque
-          distinctio ab, esse reiciendis magni quod laboriosam sit dolorum
-          dolorem dolores eos? Dolores?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officia
-          reprehenderit laborum nesciunt odio saepe voluptate nobis nostrum,
-          temporibus quis neque cupiditate quos voluptas assumenda libero dolor,
-          perferendis, itaque aliquam?
-        </p>
-      </div>
+    <div class="row">
+      <div class="col-12 header"><h1>Cabecera</h1></div>
     </div>
 
-    <div class="footer"><footer>Pie de pagina</footer></div>
+    <div class="divP">
+      <div class="row">
+        <div class="col-4 div1">
+          <div class="div3">Lorem</div>
+          <div class="div4">Ipsum</div>
+          <div class="div5">Dolor</div>
+          <div class="div6">Sit</div>
+        </div>
+
+        <div class="col-8 div2">
+          <h1>Lorem ipsum</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+            possimus magnam, perferendis non ipsum odit ducimus doloremque
+            distinctio ab, esse reiciendis magni quod laboriosam sit dolorum
+            dolorem dolores eos? Dolores?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officia
+            reprehenderit laborum nesciunt odio saepe voluptate nobis nostrum,
+            temporibus quis neque cupiditate quos voluptas assumenda libero
+            dolor, perferendis, itaque aliquam?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 footer"><footer>Pie de pagina</footer></div>
+    </div>
   </body>
 </html>

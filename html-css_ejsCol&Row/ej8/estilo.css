@@ -3,7 +3,6 @@
 }
 .divP{
     text-align: center; 
-    width: 100%;
 }
 .divP{
     content: " ";
@@ -11,8 +10,8 @@
     display: table;
 }
 .divimg{
-    float: left;
-    width: 33.33%;
+    /* float: left;
+    width: 33.33%; */
     padding: 5px;
 }
 img{
