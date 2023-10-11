@@ -1,0 +1,10 @@
+div{
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+@media (min-width: 600px){
+    div{
+       display: none;
+    }
+}

@@ -1,0 +1,9 @@
+div{
+    background-color: greenyellow;
+}
+
+@media(max-width: 700px)   {
+    div{
+        background-color: rgb(69, 69, 231);
+    }
+}

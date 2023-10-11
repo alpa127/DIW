@@ -1,0 +1,16 @@
+body{
+    background-color: lightgreen;
+}
+
+@media (max-width: 400px){
+    body{
+        background-color: lightblue;
+    }
+}
+
+
+@media (min-width: 800px){
+    body{
+        background-color: pink;
+    }
+}
