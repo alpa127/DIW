@@ -1,0 +1,30 @@
+*{
+box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header {
+  background-color: lightpink;
+  padding: 20px;
+}
+
+aside {
+  background-color: lightblue;
+  padding: 20px;
+  margin-top: 5px;
+}
+
+article {
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+footer {
+  background-color: darkgray;
+  padding: 20px;
+}
