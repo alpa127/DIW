@@ -1,11 +1,26 @@
-header{
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.img-header{
     background-image: url('img/html5-wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height:300px;
+  
+
 }
 
 .cajaP{
     display: inline-block;
     width: 100%;
-    background-color: rgb(58, 58, 58);
+    background-color: black;
+    
 }
 .menu{
     float: left;
@@ -18,7 +33,48 @@ a{
 }
 .salir{
     float: right;
-    background-color: rgb(58, 58, 58);
+    background-color: black;
     padding: 15px;
 
+}
+.imagen1,
+.imagen2,
+.imagen3{
+    float: left;
+}
+
+.div1{
+    background-color: yellowgreen;
+    height: 200px;
+}
+
+.div2{
+    background-color: lightcoral;
+    height: 200px;
+    margin-right: 0px;
+}
+
+.div3{
+    background-color: lightblue;
+    height: 200px;
+}
+
+.div4{
+    background-color: pink;
+    height: 200px;
+}
+
+.div5{
+    background-color: rgb(7, 163, 137);
+    height: 200px;
+}
+.div1,
+.div2,.div3,
+.div4,
+.div5{
+    margin: px;
+}
+.parrafoCajaVerde{
+    display: inline;
+    background-color: lightblue;
 }
