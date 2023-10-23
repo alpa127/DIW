@@ -1,10 +1,7 @@
 *{
     box-sizing: border-box;
 }
-.container{
-    width: 1024px;
-    margin: 0 auto;
-}
+
 
 .img-header{
     background-image: url('img/html5-wallpaper.jpg');
@@ -46,35 +43,49 @@ a{
 .div1{
     background-color: yellowgreen;
     height: 200px;
+    padding: 10px;
 }
 
 .div2{
     background-color: lightcoral;
     height: 200px;
-    margin-right: 0px;
+    padding: 15px;
 }
 
 .div3{
     background-color: lightblue;
     height: 200px;
+    padding: 15px;
 }
 
 .div4{
     background-color: pink;
     height: 200px;
+    padding: 15px;
 }
 
 .div5{
     background-color: rgb(7, 163, 137);
     height: 200px;
+    padding: 15px;
 }
-.div1,
-.div2,.div3,
-.div4,
-.div5{
-    margin: px;
-}
+
 .parrafoCajaVerde{
     display: inline;
     background-color: lightblue;
+}
+
+.flecha{
+    border-radius: 100%;
+    background-color: rgba(128,128,128,0.4);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    padding: 10px;
+}
+
+.imgFlecha{
+    width: 100%;
 }

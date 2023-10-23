@@ -65,8 +65,8 @@
 @media only screen and (min-width: 1200px) {
   /* Contenedor de 1140px y centrado para versión de escritorio */
   #container {
-    width: 1140px;
-    margin: 0 auto;
+    max-width: 1140px;
+    margin: 0px auto;
   }
   
   /* Link de ir arriba se muestra solo en versión de escritorio */
