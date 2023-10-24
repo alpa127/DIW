@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 .img-header{
     background-image: url('img/html5-wallpaper.jpg');
@@ -80,7 +83,7 @@
     background-color: lightblue;
 }
 
-
+@media only screen and (min-width: 1200px) {
 .imgFlecha{
     border-radius: 100%;
     background-color: rgba(128,128,128,0.6);
@@ -88,9 +91,8 @@
     height: 50px;
     position: fixed;
     bottom: 75px;
-    right: 115px;
+    right: 220px;
     padding: 10px;
-    scroll-behavior: smooth;
 }
-
+}
 

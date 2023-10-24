@@ -69,11 +69,6 @@
     margin: 0px auto;
   }
   
-  /* Link de ir arriba se muestra solo en versión de escritorio */
-  a#totop {
-    display: block;
-  }
-
   .col-1 {
     width: 8.33%;
   }
