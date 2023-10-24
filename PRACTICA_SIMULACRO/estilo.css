@@ -17,7 +17,7 @@
     display: inline-block;
     width: 100%;
     background-color: black;
-    
+    position: sticky;
 }
 .menu{
     float: left;
