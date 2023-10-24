@@ -22,11 +22,16 @@
 .menu{
     float: left;
     padding: 15px;
+    color: white;
 }
 
-a{
+.linkNav{
     color: white;
     text-decoration: none;
+}
+
+.linkNav:hover{
+    background-color: red;
 }
 .salir{
     float: right;
@@ -75,17 +80,23 @@ a{
     background-color: lightblue;
 }
 
+@media only screen and (min-width: 1200px) {
 .flecha{
     border-radius: 100%;
-    background-color: rgba(128,128,128,0.4);
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    top: 90%;
-    right: 5%;
+    background-color: rgba(128,128,128,0.6);
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 75px;
+    right: 115px;
     padding: 10px;
 }
 
 .imgFlecha{
     width: 100%;
+}
+
+.linkFlecha{
+    scroll-behavior: smooth;
+}
 }
