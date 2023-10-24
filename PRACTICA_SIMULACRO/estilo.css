@@ -80,21 +80,17 @@
     background-color: lightblue;
 }
 
-.flecha{
+
+.imgFlecha{
     border-radius: 100%;
     background-color: rgba(128,128,128,0.6);
     width: 50px;
     height: 50px;
-    position: absolute;
+    position: fixed;
     bottom: 75px;
     right: 115px;
     padding: 10px;
-}
-
-.imgFlecha{
-    width: 100%;
-}
-
-.linkFlecha{
     scroll-behavior: smooth;
 }
+
+
