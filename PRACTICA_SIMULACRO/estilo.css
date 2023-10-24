@@ -83,6 +83,10 @@ html{
     background-color: lightblue;
 }
 
+.imgFlecha{
+    display: none;
+}
+
 @media only screen and (min-width: 1200px) {
 .imgFlecha{
     border-radius: 100%;
@@ -93,6 +97,25 @@ html{
     bottom: 75px;
     right: 220px;
     padding: 10px;
+    display: block;
 }
 }
 
+.formulario{
+    background-color: rgba(177, 173, 173, 0.6);
+    border-radius: 10px;
+}
+
+.boton{
+    margin: 0 auto;
+}
+
+.labels{
+    padding: 5px;
+}
+.inputs{
+    padding: 5px;
+}
+.textA{
+    margin-top: 10px;
+}
