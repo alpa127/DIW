@@ -104,9 +104,18 @@ html{
 .formulario{
     background-color: rgba(177, 173, 173, 0.6);
     border-radius: 10px;
+    /* width: 100%; */
 }
 
 .boton{
+    display: block;
     margin: 0 auto;
 }
+
+.textA{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
 
