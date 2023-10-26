@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+.posiciones :first-child{
+    background-color: aquamarine;
+}
+
+.posiciones :last-child{
+    background-color: coral;
+}
+
+.posiciones :nth-child(2){
+    color: blue;
+}
+
+.posiciones :nth-last-child(3){
+    color: green;
+}
+
+.posiciones :first-of-type{
+    text-decoration: underline;
+}
+
+.posiciones :last-of-type{
+    color: darkblue;
+}
+
+.posiciones  :nth-of-type(3){
+    background-color: darkgray;
+}
+
+.posiciones  :nth-last-of-type(3){
+    border: 1px solid black;
+}
+
+.equipos :only-of-type{
+    border: 1px solid black;
+    background-color: lightyellow;
+    color: blue;
+}
+
+.titulos :only-of-type{
+    background-color: yellow;
+    color: brown;
+}
+
