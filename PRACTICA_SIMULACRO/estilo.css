@@ -21,6 +21,7 @@ html{
     width: 100%;
     background-color: black;
     position: sticky;
+    z-index: 9900;
 }
 .menu{
     float: left;
