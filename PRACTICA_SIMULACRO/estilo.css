@@ -20,7 +20,7 @@ html{
     display: inline-block;
     width: 100%;
     background-color: black;
-    
+    position: sticky;
 }
 .menu{
     float: left;
@@ -83,9 +83,20 @@ html{
     background-color: lightblue;
 }
 
-.parrafoCajaVerde:hover{
-    
+.parrafoOculto{
+    display: none;
+    width: 130px;
+    background-color: yellow;
+    border: 1px solid red;
+    position: relative;
+    left: 40px;
 }
+
+.parrafoCajaVerde:hover + .parrafoOculto{
+    display: block;
+}
+
+
 
 .imgFlecha{
     display: none;
@@ -119,10 +130,16 @@ html{
 .textA{
     margin-bottom: 10px;
     margin-top: 10px;
+    resize: vertical;
 }
+
 
 .input{
     width: 100%;
 }
 
 
+iframe{
+    width: 100%;
+    height: 400px;
+}
