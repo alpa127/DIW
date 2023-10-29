@@ -12,16 +12,16 @@ html{
     background-repeat: no-repeat;
     background-size: auto;
     height:300px;
-  
-
 }
 
-.cajaP{
-    display: inline-block;
+
+nav.cajaP{
+    display: table;
     width: 100%;
     background-color: black;
     position: sticky;
-    z-index: 9900;
+    z-index: 9999;
+    top: 0px;
 }
 .menu{
     float: left;
@@ -32,12 +32,13 @@ html{
 .linkNav{
     color: white;
     text-decoration: none;
+    
 }
 
 .linkNav:hover{
     background-color: red;
 }
-.salir{
+.contacto{
     float: right;
     background-color: black;
     padding: 15px;
