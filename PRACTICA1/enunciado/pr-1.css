@@ -1,9 +1,12 @@
 /* ---- Estilos básicos ---------------------------------------------------- */
-
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
-  background: #F2F5FE url("img/fondo.gif") 0 0 repeat-x;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 81%, rgba(145,174,241,1) 100%);
   font: 70%/160% "verdana", sans-serif;
   color: #192666;
 }
@@ -24,6 +27,7 @@ p {
 .clear {
   clear: both;
 }
+
 
 h1,
 h2,
@@ -59,10 +63,10 @@ ol {
 
 /* ---- Layout ------------------------------------------------------------- */
 
-#contenedor {
+/* #contenedor {
   width: 770px;
   margin: 50px auto 0 auto;
-}
+} */
 
 #cabecera {
   width: 770px;
@@ -94,14 +98,18 @@ ol {
   width: 200px;
   margin: 15px 0 0 0;
   padding: 0;
-  background: #CEDBF9 url("img/fondo_columna.gif") no-repeat;
+  border-radius: 0% 13px 0% 0%;
+  background-color: #CFDDF9;
+  box-shadow: inset 0 0 8px 1px #a6beef;
 }
 
 #pie {
   clear: both;
   height: 60px;
   margin-bottom: 50px;
-  background: url("img/fondo_pie.jpg") no-repeat;
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: inset 0 -32px 5px -30.5px #a7bae3;
   color: #6685CC;
   position: relative;
 }
@@ -183,7 +191,9 @@ ol {
   clear: both;
   margin: 0;
   padding: 20px;
-  background: url("img/fondo_articulo.jpg") no-repeat;
+  border-radius: 15px 0px 0px 0px;
+  background-color: white;
+  box-shadow: inset 5px 6.5px 13.5px -10.5px #6593f7;
 }
 
 #contenido .articulo img {
@@ -251,7 +261,11 @@ ol {
   margin: 4px 5px 0 0;
 }
 
-#contenido #secundario #sobremi p {}
+#contenido #secundario #sobremi p {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+}
 
 #contenido #secundario div {
   padding: 0 10px;

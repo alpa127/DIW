@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi sitio web</title>
     <link rel="stylesheet" href="pr-1.css">
+    <link rel="stylesheet" href="pr-1-columnas.css">
 </head>
 
 <body>
     <!-- Contenedor -->
-    <div id="contenedor">
+    <div id="contenedor" >
 
         <!-- Cabecera -->
-        <div id="cabecera">
+        <header id="cabecera">
 
             <!-- Logo -->
             <h1 id="logo"><a href="./" title="Mi sitio web">Mi sitio web</a></h1>
@@ -30,10 +31,10 @@
             </div> <!-- /buscador -->
 
             <div class="clear"></div>
-        </div> <!-- /cabecera -->
+        </header> <!-- /cabecera -->
 
         <!-- Menú principal -->
-        <div id="menu">
+        <nav id="menu">
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li class="seleccionado"><a href="#">Blog</a></li>
@@ -43,16 +44,17 @@
             </ul>
 
             <div class="clear"></div>
-        </div> <!-- /menú principal -->
+        </nav> <!-- /menú principal -->
 
         <!-- Contenido -->
         <div id="contenido">
 
+            <div class="row">
             <!-- Principal -->
-            <div id="principal">
+            <main id="principal" class="col-e-8">
 
                 <!-- Articulo -->
-                <div class="articulo">
+                <article class="articulo">
                     <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
                     <p class="info">
                         <span class="fecha">dd-mm-aaaa</span>
@@ -68,12 +70,12 @@
                         ut est placerat condimentum.</p>
 
                     <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
-                </div> <!-- /articulo -->
+                </article> <!-- /articulo -->
 
                 <div class="clear"></div>
 
                 <!-- Articulo -->
-                <div class="articulo">
+                <article class="articulo">
                     <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
                     <p class="info">
                         <span class="fecha">dd-mm-aaaa</span>
@@ -89,12 +91,12 @@
                         ut est placerat condimentum.</p>
 
                     <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
-                </div> <!-- /articulo -->
+                </article> <!-- /articulo -->
 
                 <div class="clear"></div>
 
                 <!-- Articulo -->
-                <div class="articulo">
+                <article class="articulo">
                     <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
                     <p class="info">
                         <span class="fecha">dd-mm-aaaa</span>
@@ -110,14 +112,14 @@
                         ut est placerat condimentum.</p>
 
                     <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
-                </div> <!-- /articulo -->
+                </article> <!-- /articulo -->
 
                 <div class="clear"></div>
 
-            </div><!-- /principal -->
+            </main><!-- /principal -->
 
             <!-- Secundario -->
-            <div id="secundario">
+            <aside id="secundario" class="col-e-4">
 
                 <!-- Sobre mi -->
                 <h3><a href="#">Sobre mí</a></h3>
@@ -172,15 +174,16 @@
 
                 <div class="clear"></div>
 
-            </div> <!-- /secundario -->
+            </aside> <!-- /secundario -->
 
             <div class="clear"></div>
+        </div>
         </div> <!-- /contenido -->
 
         <!-- Pie de página -->
-        <div id="pie">
+        <footer id="pie">
             <p id="copyright">&copy; 200X Nombre de empresa</p>
-        </div> <!-- /pie de página -->
+        </footer> <!-- /pie de página -->
 
     </div> <!-- /contenedor -->
 </body>
