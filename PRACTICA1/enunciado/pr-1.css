@@ -29,6 +29,7 @@ p {
 }
 
 
+
 h1,
 h2,
 h3,
@@ -69,7 +70,7 @@ ol {
 } */
 
 #cabecera {
-  width: 770px;
+  width: 100%;
   position: relative;
   height: 100px;
   margin: 0;
@@ -80,13 +81,13 @@ ol {
 }
 
 #contenido {
-  width: 770px;
+  width: 100%;
   background: #FFF;
 }
 
 #contenido #principal {
   float: left;
-  width: 520px;
+  width: 100%;
   margin-top: 15px;
   margin-right: 10px;
   padding: 0 0 0 20px;
@@ -95,10 +96,10 @@ ol {
 
 #contenido #secundario {
   float: left;
-  width: 200px;
+  width: 100%;
   margin: 15px 0 0 0;
   padding: 0;
-  border-radius: 0% 13px 0% 0%;
+  border-radius: 13px 13px 0% 0%;
   background-color: #CFDDF9;
   box-shadow: inset 0 0 8px 1px #a6beef;
 }
@@ -191,13 +192,13 @@ ol {
   clear: both;
   margin: 0;
   padding: 20px;
-  border-radius: 15px 0px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
   background-color: white;
   box-shadow: inset 5px 6.5px 13.5px -10.5px #6593f7;
 }
 
 #contenido .articulo img {
-  width: 490px;
+  width: 100%;
 }
 
 #contenido .articulo h2 {
@@ -256,19 +257,21 @@ ol {
   color: #192666;
 }
 
-#contenido #secundario #sobremi img {
+#contenido #secundario #sobremi div img {
   float: left;
   margin: 4px 5px 0 0;
+  width: 100%;
+  padding: 5px;
 }
 
-#contenido #secundario #sobremi p {
+#contenido #secundario #sobremi div p {
   margin-top: 0;
   margin-bottom: 0;
-  display: inline-block;
+  padding: 10px;
 }
 
 #contenido #secundario div {
-  padding: 0 10px;
+  padding: 0px 10px 0px 0px;
 }
 
 #contenido #secundario ul {

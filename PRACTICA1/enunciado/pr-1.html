@@ -11,7 +11,7 @@
 
 <body>
     <!-- Contenedor -->
-    <div id="contenedor" >
+    <div id="contenedor">
 
         <!-- Cabecera -->
         <header id="cabecera">
@@ -34,6 +34,7 @@
         </header> <!-- /cabecera -->
 
         <!-- Menú principal -->
+        
         <nav id="menu">
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -42,16 +43,16 @@
                 <li><a href="#">Fotos</a></li>
                 <li><a href="#">Portfolio</a></li>
             </ul>
-
             <div class="clear"></div>
-        </nav> <!-- /menú principal -->
+        </nav><!-- /menú principal -->
 
         <!-- Contenido -->
         <div id="contenido">
 
             <div class="row">
             <!-- Principal -->
-            <main id="principal" class="col-e-8">
+            <div class="col-e-8 col-t-8">
+            <main id="principal">
 
                 <!-- Articulo -->
                 <article class="articulo">
@@ -116,41 +117,43 @@
 
                 <div class="clear"></div>
 
-            </main><!-- /principal -->
+            </main>
+        </div><!-- /principal -->
 
             <!-- Secundario -->
-            <aside id="secundario" class="col-e-4">
-
+            <div class="col-e-4 col-t-4">
+            <aside id="secundario">
+                
                 <!-- Sobre mi -->
+                <div class="col-e-12 col-t-12 col-m-6">
                 <h3><a href="#">Sobre mí</a></h3>
-
-                <div id="sobremi">
-                    <img src="img/mifoto.gif" alt="Mi foto" />
-                    <p><strong>Nombre Apellido</strong><br />
-                        Edad<br />
-                        Ciudad<br />
-                        <a href="#">Perfil público</a>
-                    </p>
-                </div> <!-- /sobre mi -->
-
-                <div class="clear"></div>
-
+                <div id="sobremi" class="row">
+                    <div class="col-t-4 col-e-4">
+                        <img src="img/mifoto.gif" alt="Mi foto" />
+                    </div>
+                    <div class="col-t-8 col-e-8">
+                        <p><strong>Nombre Apellido</strong><br />
+                            Edad<br />
+                            Ciudad<br />
+                            <a href="#">Perfil público</a>
+                        </p>
+                    </div>
+                </div> 
+            </div><!-- /sobre mi -->
                 <!-- Categorías -->
+                <div class="col-e-12 col-t-12 col-m-6">
                 <h3>Categorías</h3>
-
                 <ul id="categorias">
                     <li class="seleccionado"><a href="#">Categoría 1</a></li>
                     <li><a href="#">Categoría 2</a></li>
                     <li><a href="#">Categoría 3</a></li>
                     <li><a href="#">Categoría 4</a></li>
                     <li><a href="#">Categoría 5</a></li>
-                </ul>
-
-                <div class="clear"></div>
-
+                </ul>             
+                </div>
                 <!-- Archivo -->
+                <div class="col-e-12 col-t-12 col-m-6">
                 <h3>Archivo</h3>
-
                 <ul id="archivo">
                     <li class="seleccionado"><a href="#">Enero 200X</a></li>
                     <li><a href="#">Diciembre 200X</a></li>
@@ -158,12 +161,10 @@
                     <li><a href="#">Octubre 200X</a></li>
                     <li><a href="#">Septiembre 200X</a></li>
                 </ul>
-
-                <div class="clear"></div>
-
+                </div>
                 <!-- Enlaces -->
+                <div class="col-e-12 col-t-12 col-m-6">
                 <h3>Enlaces</h3>
-
                 <ul id="enlaces">
                     <li><a href="#">Enlace 1</a></li>
                     <li><a href="#">Enlace 2</a></li>
@@ -171,12 +172,11 @@
                     <li><a href="#">Enlace 4</a></li>
                     <li><a href="#">Enlace 5</a></li>
                 </ul>
+            </div>
+            </aside> 
+        </div><!-- /secundario -->
 
-                <div class="clear"></div>
-
-            </aside> <!-- /secundario -->
-
-            <div class="clear"></div>
+        
         </div>
         </div> <!-- /contenido -->
 
@@ -184,8 +184,7 @@
         <footer id="pie">
             <p id="copyright">&copy; 200X Nombre de empresa</p>
         </footer> <!-- /pie de página -->
-
-    </div> <!-- /contenedor -->
+    </div><!-- /contenedor -->
 </body>
 
 </html>
