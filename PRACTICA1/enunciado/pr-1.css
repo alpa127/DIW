@@ -135,9 +135,11 @@ ol {
 }
 
 #cabecera #buscador {
-  position: absolute;
+  /* position: absolute;
   top: 40px;
-  right: 20px;
+  right: 20px; */
+  float: right;
+  text-align: center;
 }
 
 #cabecera #buscador legend {
@@ -271,7 +273,7 @@ ol {
 }
 
 #contenido #secundario div {
-  padding: 0px 10px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 #contenido #secundario ul {
