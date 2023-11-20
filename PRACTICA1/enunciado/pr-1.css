@@ -135,11 +135,11 @@ ol {
 }
 
 #cabecera #buscador {
-  /* position: absolute;
+  position: absolute;
   top: 40px;
-  right: 20px; */
-  float: right;
-  text-align: center;
+  right: 20px;
+  
+
 }
 
 #cabecera #buscador legend {
