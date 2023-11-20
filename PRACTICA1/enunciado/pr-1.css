@@ -35,7 +35,7 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 1em 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -71,10 +71,8 @@ ol {
 
 #cabecera {
   width: 100%;
-  position: relative;
-  height: 100px;
-  margin: 0;
-  padding: 0;
+ 
+  padding: 30px;
   background: #233C9B url("img/cabecera.jpg") no-repeat;
   background-size: cover;
   color: #FFF;
@@ -117,15 +115,11 @@ ol {
 
 /* ---- Cabecera ----------------------------------------------------------- */
 #cabecera #logo {
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  margin: 0;
+  float: left;
 }
 
 #cabecera #logo a {
   color: #FFF;
-  display: block;
   line-height: 35px;
 }
 
@@ -135,9 +129,8 @@ ol {
 }
 
 #cabecera #buscador {
-  position: absolute;
-  top: 40px;
-  right: 20px;
+  float: right;
+ 
 }
 
 #cabecera #buscador legend {
@@ -272,6 +265,12 @@ ol {
 
 #contenido #secundario div {
   padding: 0px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  #contenido #secundario div {
+    padding: 5px 5px 0px 0px;
+  }
 }
 
 #contenido #secundario ul {
