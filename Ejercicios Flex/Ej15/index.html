@@ -12,6 +12,8 @@
       height: 200px; 
       background-color: #c3c3c3; 
       display: flex; 
+      flex-direction: row-reverse;
+      align-items: end;
     } 
  
     main div { 
@@ -21,14 +23,18 @@
  
     main div.rojo { 
       background-color: red; 
+      flex-basis: 20%;
+      align-self: center;
     } 
  
     main div.verde { 
       background-color: green; 
+      flex-basis: 40%;
     } 
  
     main div.azul { 
       background-color: blue; 
+      flex-basis: 50%;
     } 
   </style> 
 </head> 
