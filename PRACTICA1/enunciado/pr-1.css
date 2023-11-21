@@ -261,12 +261,12 @@ ol {
   padding: 5px;
 }
 
-#contenido #secundario div {
+#contenido #secundario section {
   padding: 0px 0px 0px 0px;
 }
 
 @media only screen and (max-width: 600px) {
-  #contenido #secundario div {
+  #contenido #secundario section {
     padding: 5px 5px 0px 0px;
   }
 }
