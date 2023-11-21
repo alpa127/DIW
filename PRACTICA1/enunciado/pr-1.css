@@ -305,8 +305,5 @@ ol {
 /* ---- Pie ---------------------------------------------------------------- */
 #pie p {
   margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 10px;
-  left: 40px;
+  padding: 30px;
 }
