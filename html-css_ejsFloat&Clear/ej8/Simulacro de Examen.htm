@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro de Examen</title>
+    
+    
+<link rel="stylesheet" href="Simulacro%20de%20Examen_files/examen.css"><link rel="stylesheet" href="Simulacro%20de%20Examen_files/columnas.css"></head>
+
+<body>
+    <div class="container">
+        <header class="cabecera">2023-11-15. Simulacro de examen. DIW</header>
+        <main class="row">
+            <div class="col-e-6 col-t-6">
+                <div id="cajaIzq">
+                    <div class="clearfix">
+                        <div class="imgHomer f-left">
+                            <img src="Simulacro%20de%20Examen_files/HomerSimpson.png" alt="Homer Simpson">
+                            <div>Homer Simpson</div>
+                        </div>
+                        <div class="txt">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio illo iusto eius, facere
+                            ipsum, maiores tempora officiis magnam mollitia suscipit nihil, unde obcaecati explicabo
+                            molestias quo sit. Atque, tempore commodi.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-e-6 col-t-6">
+                <div id="cajaDer">
+                    <fieldset>
+                        <legend>Comprar Coche</legend>
+                        <div class="row">
+                            <div class="col-e-4">
+                                <label>Nombre:</label>
+                            </div>
+                            <div class="col-e-8">
+                                <input type="text" class="texto">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-e-4">
+                                <label>Coche:</label>
+                            </div>
+                            <div class="col-e-8">
+                               <select class="coches">
+                                <option selected="selected">Volvo</option>
+                                <option>Seat</option>
+                                <option>Aston Martin</option>
+                               </select>
+                            </div>
+                        </div>
+                        <div class="btnEnviar">
+                            <button>Enviar</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </main>
+        <footer class="piePagina">
+            <img src="Simulacro%20de%20Examen_files/html5.png" alt="Logo HTML">
+        </footer>
+    </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+.cabecera{
+    background-color: #d3d3d3;
+    text-align: right;
+    padding: 30px;
+}
+
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}
+
+.piePagina{
+    background-color: #d3d3d3;
+    text-align: right;
+    padding: 30px;
+}
+
+.piePagina img{
+    height: 40px;
+}
+
+/*ZONA IZQUIERDA*/
+#cajaIzq{
+    background-color: #d3ffd3;
+}
+.imgHomer{
+    text-align: center;
+    margin-right: 15px;
+}
+
+.imgHomer img{
+    width: 160px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid black 1px;
+    box-shadow: 0 0 10px 3px #000000;
+}
+
+.imgHomer div {
+    background-color: black;
+    color: white;
+    padding: 3px 6px;
+    transform: translateY(-30px);
+    font-size: 160%;
+    
+}
+
+.txt::first-letter{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+/*ZONA DERECHA*/
+#cajaDer{
+    background-color: #eee;
+}
+
+.texto{
+    width: 100%;
+}
+.coches{
+    width: 100%;
+}
+.btnEnviar{
+    text-align: center;
+}
+
+.btnEnviar button{
+    background-color: green;
+    color: white;
+    font-size: 150%;
+}
+
+/*CAJA HOLA*/
+.hola{
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+.adios{
+    background-color: lightgreen;
+    padding: 20px;
+}
