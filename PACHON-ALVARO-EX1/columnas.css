@@ -89,7 +89,8 @@
     position: absolute;
     width: 35%;
     top: 15%;
-    left: 3%;
+    left: calc(3% + 3rem);
+    
   }
 
   .col-e-1 {
