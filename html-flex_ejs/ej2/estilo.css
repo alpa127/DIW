@@ -1,6 +1,14 @@
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.d-flex{
+    display: flex;
+}
 .div1{
     background-color: pink;
-    float: right;
+
     width: 100px;
     height: 100px;
     text-align: center;
@@ -12,7 +20,7 @@
 
 .div2{
     background-color: aqua;
-    float: left;
+
     width: 100px;
     height: 100px;
     text-align: center;
@@ -23,7 +31,7 @@
 
 .div3{
     background-color: coral;
-    float: left;
+
     width: 100px;
     height: 100px;
     text-align: center;
