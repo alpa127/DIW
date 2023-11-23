@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+.cajaP{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+}
+.menu{
+    float: left;
+    padding: 15px;
+}
+.menu:hover,
+.salir:hover{
+background-color: red;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.salir{
+    float: right;
+    background-color: rgb(58, 58, 58);
+    padding: 15px;
+
+}
+
