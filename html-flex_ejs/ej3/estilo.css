@@ -14,8 +14,7 @@
 }
 .div2{
     background-color: aqua;
-    display: inline;
-    text-align: center;
+    align-self: flex-start;
 }
 
 .div3{
