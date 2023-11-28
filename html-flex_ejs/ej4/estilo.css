@@ -1,20 +1,23 @@
+.contenedor{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+}
 .div1{
     background-color: pink;
-    float: right;
     width: 100px;
     height: 100px;
     text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    
 }
-
 .div2{
     background-color: aqua;
-    float: left;
-    display: inline;
-    text-align: center;
+    align-self: flex-start;
 }
 
 .div3{
@@ -22,6 +25,7 @@
 }
 
 .div4{
-    float: left;
-    margin-top: 30px;
+    display: flex;
+    row-gap: 30px;
 }
+
