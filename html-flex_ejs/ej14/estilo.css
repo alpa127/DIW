@@ -34,6 +34,8 @@ div {
     background: #EBF7F8;
     width: 1024px;
     margin: 0 auto;
+    display: flex;
+
 }
 
 .container.index {
@@ -56,23 +58,23 @@ div {
 
 .sidebar {
     background: #FFBE56;
-    float: left;
-    width: 33.33%;
+    /* float: left; */
+    flex: 1;
     height: 350px;
 }
 
 .main-content {
     background: #88ABC2;
     color: #fff;
-    float: left;
-    width: 33.33%;
+    /* float: left; */
+    flex: 1;
     height: 350px;
 }
 
 .sub-content {
     background: #49708A;
-    float: left;
-    width: 33.33%;
+    /* float: left; */
+    flex: 1;
     height: 350px;
 }
 

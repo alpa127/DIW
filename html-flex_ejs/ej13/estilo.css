@@ -35,6 +35,11 @@ div {
     width: 1024px;
     margin: 0 auto;
 }
+.subcontainer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 
 .container.index {
     width: 80%;
@@ -56,23 +61,23 @@ div {
 
 .sidebar {
     background: #FFBE56;
-    float: left;
-    width: 33.33%;
+    /* float: left; */
+    flex-basis: 33.33%;
     height: 350px;
 }
 
 .main-content {
     background: #88ABC2;
     color: #fff;
-    float: left;
-    width: 33.33%;
+    /* float: left; */
+    flex-basis: 33.33%;
     height: 350px;
 }
 
 .sub-content {
     background: #49708A;
-    float: left;
-    width: 33.33%;
+    /* float: left; */
+    flex-basis: 33.33%;
     height: 350px;
 }
 
@@ -82,6 +87,7 @@ div {
 
 .footer {
     background: #AAD637;
+    
 }
 
 .post {

@@ -42,16 +42,18 @@ div {
 .header {
     background: #FF9C56;
     overflow: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
     background: #FF4D79;
-    float: left;
+    /* float: left; */
 }
 
 .navigation {
     background: #E85F43;
-    float: right;
+    /* float: right; */
 }
 
 .sidebar {
@@ -79,12 +81,20 @@ div {
     background: #AAD637;
     margin-bottom: 20px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.imgTxt{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .image {
     background: #8EB22E;
-    float: left;
-    width: 20%;
+    /* float: left; */
+    flex-basis: 20%;
     height: 150px;
 }
 
@@ -92,8 +102,9 @@ div {
     background: #708C24;
     padding: 20px;
     margin: 0;
-    width: 70%;
-    float: right;
+    flex-basis: 70%;
+    align-self: flex-start;
+    /* float: right; */
 }
 
 .widget {

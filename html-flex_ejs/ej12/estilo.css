@@ -35,6 +35,9 @@ div {
 
 .container {
     background: #EBF7F8;
+    display: flex;
+   margin: 0;
+   padding: 0;
 }
 
 .container.index {
@@ -56,23 +59,23 @@ div {
 
 .sidebar {
     background: #FFBE56;
-    float: left;
-    width: 33.33%;
+    /* float: left; */
+    flex-basis: 33.33%;
     height: 350px;
 }
 
 .main-content {
     background: #88ABC2;
     color: #fff;
-    float: left;
-    width: 33.33%;
+    /* float: left; */
+    flex-basis: 33.33%;
     height: 350px;
 }
 
 .sub-content {
     background: #49708A;
-    float: left;
-    width: 33.33%;
+    /* float: left; */
+    flex-basis: 33.33%;
     height: 350px;
 }
 

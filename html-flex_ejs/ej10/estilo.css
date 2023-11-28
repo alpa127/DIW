@@ -44,16 +44,18 @@ div {
 .header {
     background: #FF9C56;
     overflow: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
     background: #FF4D79;
-    float: right;
+    /* float: right; */
 }
 
 .navigation {
     background: #E85F43;
-    float: left;
+    /* float: left; */
 }
 
 .sidebar {
@@ -69,8 +71,14 @@ div {
     background: #88ABC2;
     color: #fff;
     overflow: auto;
+    display: flex;
 }
-
+.cajaSide{
+    flex-basis: 25%;
+}
+.cajaSub{
+    flex: 1;
+}
 .sub-content {
     background: #49708A;
     /* float: left;
