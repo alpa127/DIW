@@ -14,17 +14,15 @@
 }
 .divP{
     margin-bottom: 25px;
-    display: block;
+    display: flex;
 }
-.columna{
-    float: left;
-}
+
 .div1{
-    width: 25%;
+    flex-basis: 25%;
     
 }
 .div2{
-    width: 70%;
+    flex-basis: 70%;
     margin-left: 5%;
 }
  .div3,

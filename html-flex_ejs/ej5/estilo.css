@@ -1,32 +1,31 @@
 *{
     box-sizing: border-box;
 }
-
+.container{
+    display: flex;
+    flex-direction: row;
+}
 .div1{
     padding: 20px;
     background-color: aqua;
     text-align: center;
-    width: 25%;
-    float: left;
+    flex-basis: 25%;
 }
 .div2{
     padding: 20px;
     background-color: beige;
     text-align: center;
-    width: 25%;
-    float: left;
+    flex-basis: 25%;
 }
 .div3{
     padding: 20px;
     background-color: coral;
     text-align: center;
-    width: 25%;
-    float: left;
+    flex-basis: 25%; 
 }
 .div4{
     padding: 20px;
     background-color: rgba(76, 78, 236, 0.884);
     text-align: center;
-    width: 25%;
-    float: left;
+    flex-basis: 25%;
 }

@@ -8,11 +8,11 @@
 .divP{
     content: " ";
     clear: both;
-    display: table;
+    display: flex;
 }
 .divimg{
-    float: left;
-    width: 33.33%;
+    /* float: left; */
+    flex-basis: 33.33%;
     padding: 5px;
 }
 img{
@@ -22,12 +22,14 @@ img{
 .footer{
     background-color: grey; 
     padding: 15px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.p1{
+/* .p1{
     text-align: left;
 }
 .p2{
     text-align: right;
-}
+} */
 

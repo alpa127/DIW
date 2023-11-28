@@ -2,12 +2,16 @@
     box-sizing: border-box;
 }
 .cajaP{
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
     background-color: rgb(58, 58, 58);
 }
+.menus{
+    display: flex;
+}
 .menu{
-    float: left;
+    /* float: left; */
     padding: 15px;
 }
 .menu:hover,
@@ -19,9 +23,9 @@ a{
     text-decoration: none;
 }
 .salir{
-    float: right;
+    /* float: right; */
     background-color: rgb(58, 58, 58);
     padding: 15px;
-
+    
 }
 
