@@ -54,7 +54,7 @@ div {
 .navigation {
     background: #E85F43;
     /* float: right; */
-    width: 70%;
+    flex-basis: 75%;
 }
 .cajaSide{
     flex-basis: 25%;
