@@ -60,7 +60,7 @@ div {
 .sidebar {
     background: #FFBE56;
     /* float: left; */
-    flex-basis: 33.33%;
+    flex:1;
     height: 350px;
 }
 
@@ -68,14 +68,14 @@ div {
     background: #88ABC2;
     color: #fff;
     /* float: left; */
-    flex-basis: 33.33%;
+flex: 1;
     height: 350px;
 }
 
 .sub-content {
     background: #49708A;
     /* float: left; */
-    flex-basis: 33.33%;
+    flex:1;
     height: 350px;
 }
 
