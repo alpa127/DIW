@@ -8,39 +8,40 @@ div {
   display: flex;
   height: 500px;
   border: 4px solid black;
+  gap: 5px;
 }
 
 /***************** Contenedor izquierda *****************/
 #container-izq {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
   border: 4px solid red;
-  flex-basis: 20%;
+  width: 20%;
  
 }
 
 #container-izq #container-izq-1 {
+  align-self: center;
   width: 50px;
   height: 50px;
 }
 
 #container-izq #container-izq-2 {
   display: flex;
-  border-width: 0px;
-  gap: 50px;
+  border-width: 0px; 
 }
 
 #container-izq #container-izq-3 {
   width: 50px;
   height: 50px;
-
+  
 }
 
 #container-izq #container-izq-4 {
   width: 50px;
   height: 50px;
-  
+  margin-left: auto;
 }
 
 #container-izq #container-izq-5 {
@@ -73,7 +74,7 @@ div {
   display: flex;
   flex-direction: column;
   border: 4px solid green;
-  flex-basis: 50%;
+  width: 50%;
   justify-content: space-between;
 }
 
@@ -104,6 +105,7 @@ div {
 #container-centro #container-centro-5 {
   width: 50px;
   height: 50px;
+  align-self: self-end;
 }
 
 #container-centro #container-centro-6 {
@@ -113,12 +115,14 @@ div {
 #container-centro #container-centro-7 {
   width: 50px;
   height: 50px;
+  align-self: center;
 }
 
 #container-centro #container-centro-8 {
   width: 50px;
   height: 50px;
   background-color: lightcoral;
+  flex-grow: 1;
 }
 
 #container-centro #container-centro-9 {
@@ -131,24 +135,31 @@ div {
 #container-dcha {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   border: 4px solid blue;
-  flex-basis: 30%;
+  width: 30%;
 }
 
 #container-dcha #container-dcha-1 {
   height: 50px;
   background-color: lightblue;
+  order: 3;
 }
 
 #container-dcha #container-dcha-2 {
+  display: flex;
+  justify-content: space-around;
   background-color: lightcoral;
   border: 0px;
+  order: 1;
 }
 
 #container-dcha #container-dcha-3 {
   background-color: lightgreen;
   height: 50px;
   border: 0px;
+  display: flex;
+  order: 2;
 }
 
 #container-dcha #container-dcha-4 {
@@ -161,6 +172,10 @@ div {
   height: 50px;
 }
 
-#container-dcha #container-dcha-6 {}
+#container-dcha #container-dcha-6 {
+  flex: 1;
+}
 
-#container-dcha #container-dcha-7 {}
+#container-dcha #container-dcha-7 {
+  flex: 1;
+}
