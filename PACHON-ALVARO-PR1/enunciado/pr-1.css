@@ -68,8 +68,8 @@ ol {
 } */
 
 #cabecera {
-  width: 100%;
- 
+  /* width: 100%; */
+  display: block;
   padding: 30px;
   background: #233C9B url("img/cabecera.jpg") no-repeat;
   background-size: cover;
@@ -77,13 +77,12 @@ ol {
 }
 
 #contenido {
-  width: 100%;
+ 
   background: #FFF;
 }
 
 #contenido #principal {
   float: left;
-  width: 100%;
   margin-top: 15px;
   margin-right: 10px;
   padding: 0 0 0 20px;
