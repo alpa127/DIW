@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 81%, rgba(145,174,241,1) 100%);
+  background: linear-gradient(0deg, #f2f5fe 81%, #96aff5 100%);
   font: 70%/160% "verdana", sans-serif;
   color: #192666;
 }
@@ -68,30 +68,29 @@ ol {
 } */
 
 #cabecera {
-  /* width: 100%; */
-  display: block;
+ 
+  margin: 0;
   padding: 30px;
+  display: block;
   background: #233C9B url("img/cabecera.jpg") no-repeat;
   background-size: cover;
   color: #FFF;
 }
 
 #contenido {
- 
   background: #FFF;
 }
 
 #contenido #principal {
   float: left;
   margin-top: 15px;
-  margin-right: 10px;
-  padding: 0 0 0 20px;
+  margin-right: 5px;
+  padding: 0 0 0 10px;
   background: #FFF;
 }
 
 #contenido #secundario {
   float: left;
-  width: 100%;
   margin: 15px 0 0 0;
   padding: 0;
   border-radius: 13px 13px 0% 0%;
@@ -112,12 +111,14 @@ ol {
 
 /* ---- Cabecera ----------------------------------------------------------- */
 #cabecera #logo {
-  float: left;
+  margin: 0;
+  display: inline;
 }
 
 #cabecera #logo a {
   color: #FFF;
   line-height: 35px;
+  margin: 0;
 }
 
 #cabecera #logo a:hover {
@@ -125,10 +126,10 @@ ol {
   text-decoration: underline;
 }
 
-#cabecera #buscador {
+#cabecera #buscador{
   float: right;
- 
 }
+
 
 #cabecera #buscador legend {
   display: none;
@@ -140,6 +141,7 @@ ol {
 
 /* ---- Menú --------------------------------------------------------------- */
 #menu {
+ 
   background: #192666;
   padding: 10px 0 0 0;
 }
@@ -181,6 +183,7 @@ ol {
 #contenido .articulo {
   clear: both;
   margin: 0;
+  margin-bottom: 10px;
   padding: 20px;
   border-radius: 15px 15px 0px 0px;
   background-color: white;
