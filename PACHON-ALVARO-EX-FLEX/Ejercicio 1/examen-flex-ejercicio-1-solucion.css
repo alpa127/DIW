@@ -27,16 +27,7 @@
     flex-wrap: wrap;
     align-items: center;
 
-}
-
-.ej2 :nth-child(1) {
-    order: 1;
-}
-
-.ej2 :nth-child(2) {}
-
-.ej2 :nth-child(3) {}
-
+    
 .ej2 :nth-child(4) {}
 
 .ej2 :nth-child(5) {
@@ -199,4 +190,5 @@
 
 .ej8 :nth-child(5) {
     display: none;
+}
 }
