@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023-12-13. Examen Flex. DIW</title>
+  <link rel="stylesheet" href="examen-flex-ejercicio-1-enunciado.css">
+  <link rel="stylesheet" href="examen-flex-ejercicio-1-solucion.css">
+</head>
+
+<body>
+  <div class="contenedor-ejercicio">
+    <h2>Ejercicio 1</h2>
+    <div class="contenedor-flex ej1">
+      <div class="rojo">1</div>
+      <div class="verde">2</div>
+      <div class="azul">3</div>
+      <div class="naranja">4</div>
+      <div class="violeta">5</div>
+    </div>
+  </div>
+
+  <div class="contenedor-ejercicio">
+    <h2>Ejercicio 2</h2>
+    <div class="contenedor-flex ej2">
+      <div class="rojo">1</div>
+      <div class="verde">2</div>
+      <div class="azul">3</div>
+      <div class="naranja">4</div>
+      <div class="violeta">5</div>
+    </div>
+  </div>
+
+  <div class="contenedor-ejercicio">
+    <h2>Ejercicio 3</h2>
+    <div class="contenedor-flex ej3">
+      <div class="rojo">1</div>
+      <div class="verde">2</div>
+      <div class="azul">3</div>
+      <div class="naranja">4</div>
+      <div class="violeta">5</div>
+    </div>
+  </div>
+
+  <div class="contenedor-ejercicio">
+    <h2>Ejercicio 4</h2>
+    <div class="contenedor-flex ej4">
+      <div class="rojo">1</div>
+      <div class="verde">2</div>
+      <div class="azul">3</div>
+      <div class="naranja">4</div>
+      <div class="violeta">5</div>
+    </div>
+    <div class="explicacion">He utilizado display: flex en la caja del ejercicio 4 para que sea flex, en esta misma caja
+      he utilizado align-items:center para alinear las cajas(hijas)
+      al centro del eje transversal.<br><br>
+      Para dar tamaño a las cajas que aparecen utilize flex-grow ya que establece el valor de crecimiento de cada una
+      para que ocupen todo el espacio disponible, cuanto mayor sea el numero del valor de flex-grow mayor sera el
+      espacio que ocupa esta caja,
+      pero si unas cajas tienen el mismo valor se repartiran a partes iguales el espacio sobrante para ocupar todo el
+      espacio disponible.
+      <br><br>
+      Para la caja 1 utilize flex-grow:1;<br><br>
+      Para la caja 2 utilize flex-grow:0;<br><br>
+      Para la caja 3 utilize flex-grow:2;<br><br>
+      Por lo cual con flex-grow etsamos calculando para que entre todas ocupen todo el espacio posible dando como
+      resultado que la caja 1 al tener flex-grow:1; de mas grande que la 2 ya que esta tiene flex-grow:0;
+      y a la vez que la caja 3 sea mas grande que las anteriores ya que tiene flex-grow:2;
+      pala la caja 3 también utiliza align-self:flex-end; para situar esta caja al final del eje transversal.
+    </div>
+  </div>
+
+  <div class="contenedor-ejercicio">
+    <h2>Ejercicio 5</h2>
+    <div class="contenedor-flex ej5">
+      <div class="rojo">1</div>
+      <div class="verde">2</div>
+      <div class="azul">3</div>
+      <div class="naranja">4</div>
+      <div class="violeta">5</div>
+    </div>
+  </div>
+
+  <div class="contenedor-ejercicio">
+    <h2>Ejercicio 6</h2>
+    <div class="contenedor-flex ej6">
+      <div class="rojo">1</div>
+      <div class="verde">2</div>
+      <div class="azul">3</div>
+      <div class="naranja">4</div>
+      <div class="violeta">5</div>
+    </div>
+  </div>
+
+  <div class="contenedor-ejercicio">
+    <h2>Ejercicio 7</h2>
+    <div class="contenedor-flex ej7">
+      <div class="rojo">1</div>
+      <div class="verde">2</div>
+      <div class="azul">3</div>
+      <div class="naranja">4</div>
+      <div class="violeta">5</div>
+    </div>
+  </div>
+
+  <div class="contenedor-ejercicio">
+    <h2>Ejercicio 8</h2>
+    <div class="contenedor-flex ej8">
+      <div class="rojo">1</div>
+      <div class="verde">2</div>
+      <div class="azul">3</div>
+      <div class="naranja">4</div>
+      <div class="violeta">5</div>
+    </div>
+    <div class="explicacion">He utilizado en cada una de las cajas flex: 1 0 0%
+      por que los valores de esta propiedad son flex-grow , que en este caso seria 1 , flex-shrink en esta caso 0, y
+      flex-basis en este caso 0%, por lo tanto si flex basis esta a 0% no le damos tamaño a ninguna caja y con flex grow
+      calcula el tamaño que tienen que tener para ocupar el tamaño disponible y se lo establece.
+    </div>
+  </div>
+
+</body>
+
+</html>
