@@ -1,0 +1,127 @@
+:root {
+  --bg-clr-header-footer: #d3d3d3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.row::after,
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* LEFT SIDE */
+.left-side {
+  background-color: #d3ffd3;
+}
+
+.left-side .img-container {
+  margin-right: 20px;
+}
+
+.left-side .img-container img {
+  background-color: white;
+  width: 160px;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+}
+
+.left-side .img-container .rotulo {
+  background-color: black;
+  color: white;
+  padding: 3px 6px;
+  font-size: 16pt;
+  font-weight: bold;
+  transform: translateY(-20px);
+  /*
+    Otra forma de modificar la posicion del nombre:
+    position: relative;
+    top: -20px;
+  */
+}
+
+.left-side .txt-container {
+  font-size: 10pt;
+  margin: 0 !important;
+}
+
+.left-side .txt-container::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+/* RIGHT SIDE */
+.right-side {
+  background-color: #eee;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+}
+
+.right-side #btn-enviar {
+  font-size: 14pt;
+  color: white;
+  background-color: green;
+  padding: 5px 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* HOLA Y ADIOS */
+.hola {
+  background-color: lightcoral;
+  padding: 20px;
+}
+
+.adios {
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+/* HEADER */
+header {
+  background-color: var(--bg-clr-header-footer);
+  padding: 20px;
+  /* text-align: right; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ROW */
+.row {
+  margin: 10px 0px;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--bg-clr-header-footer);
+  padding: 20px;
+  /* text-align: right; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer img {
+  height: 40px;
+}

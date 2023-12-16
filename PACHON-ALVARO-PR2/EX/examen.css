@@ -12,11 +12,15 @@ body{
 
 /*BARRA DE NAVEGACIÓN*/
 .barraNav{
-    width: 100%;
     padding: 10px;
 }
+.barraNav .clearfix{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .barraNav .clearfix .imgCabecera{
-    float: left;
+    
     padding: 15px;
 }
 .imgCabecera img{
@@ -24,7 +28,7 @@ body{
 }
 
 .barraNav .clearfix .enlace{
-    float: right;
+   
     padding: 15px;
 }
 .enlace a{
