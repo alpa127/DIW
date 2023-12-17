@@ -1,9 +1,4 @@
-.row::after
-{
-  content: "";
-  clear: both;
-  display: table;
-}
+
 
 .row {
   display: flex;
