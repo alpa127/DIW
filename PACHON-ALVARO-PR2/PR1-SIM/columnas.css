@@ -1,17 +1,7 @@
-.row::after
-{
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
-  
 }
-
-
 /* For mobile phones: */
 [class*="col-"] {
   flex: 0 0 auto;
@@ -19,14 +9,8 @@
   padding: 15px;
 }
 
-
 /* For tablets: */
-@media only screen and (min-width: 600px) {
-  .contenedor {
-    width: 100%;
-   
-  }
- 
+@media only screen and (min-width: 768px) {
   .col-t-1 {
     width: 8.33%;
   }
@@ -77,22 +61,10 @@
 }
 
 /* For desktop: */
-@media only screen and (min-width: 900px) {
-  .contenedor {
-    width: 100%;
-  }
-
-  .texto-Img{
-    display: inline-block;
-    position: relative;
-    
-  }
-  .texto{
-    position: absolute;
-    width: 35%;
-    top: 15%;
-    left: calc(3% + 3rem);
-    
+@media only screen and (min-width: 1200px) {
+  #container{
+    max-width: 1140px;
+    margin: 0 auto;
   }
 
   .col-e-1 {
