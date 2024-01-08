@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        gap: 5px;
+        grid-template-areas:
+            "uno uno dos dos tres tres"
+            "cuatro cuatro cuatro cinco cinco cinco"
+            "seis seis siete siete ocho ocho";
+    }
+
+    .item {
+        padding: 20px;
+        text-align: center;
+        background: lightcoral;
+    }
+
+    .container .item:nth-child(1) {
+        grid-area: uno;
+    }
+
+    .container .item:nth-child(2) {
+        grid-area: dos;
+    }
+
+    .container .item:nth-child(3) {
+        grid-area: tres;
+    }
+
+    .container .item:nth-child(4) {
+        grid-area: cuatro;
+    }
+
+    .container .item:nth-child(5) {
+        grid-area: cinco;
+    }
+
+    .container .item:nth-child(6) {
+        grid-area: seis;
+    }
+
+    .container .item:nth-child(7) {
+        grid-area: siete;
+    }
+
+    .container .item:nth-child(8) {
+        grid-area: ocho;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item">uno</div>
+        <div class="item">dos</div>
+        <div class="item">tres</div>
+        <div class="item">cuatro</div>
+        <div class="item">cinco</div>
+        <div class="item">seis</div>
+        <div class="item">siete</div>
+        <div class="item">ocho</div>
+    </div>
+</body>
+
+</html>
