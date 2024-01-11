@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.header,
+.footer{
+    background-color: gray;
+    color: white;
+    padding: 20px;
+}
+.divP::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+.divP{
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.div1{
+    flex-basis: 25%;
+    
+}
+.div2{
+    flex-basis: 70%;
+    margin-left: 64px;
+}
+ .div3,
+.div4,
+.div5,
+.div6{
+    background-color: rgb(14, 164, 233);
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+} 
+
+
+

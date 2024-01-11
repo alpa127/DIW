@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.div2{
+
+    padding-left: 10px;
+ 
+}

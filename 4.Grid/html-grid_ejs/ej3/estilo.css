@@ -1,0 +1,25 @@
+.contenedor{
+    display: grid;
+    grid-template-areas: "a c" "b c";
+    grid-template-columns: 1fr auto;
+}
+
+.div1{
+    background-color: pink;
+    padding: 50px;
+    align-self: self-start;
+    grid-area: c;
+   
+}
+.div2{
+    background-color: aqua;
+    grid-area: b;
+    justify-self: start;
+    align-self: self-start;
+}
+
+.div3{
+    background-color: coral;
+    grid-area: a;
+}
+

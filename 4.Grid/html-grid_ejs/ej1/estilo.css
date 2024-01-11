@@ -1,0 +1,19 @@
+.contenedor{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+}
+.div1{
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    order: 1;
+}
+.div2{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    order: 0;
+}

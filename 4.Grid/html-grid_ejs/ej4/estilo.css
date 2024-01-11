@@ -1,0 +1,31 @@
+.contenedor{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+}
+.div1{
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div2{
+    background-color: aqua;
+    align-self: flex-start;
+}
+
+.div3{
+    background-color: coral;
+}
+
+.div4{
+    display: flex;
+    row-gap: 30px;
+}
+

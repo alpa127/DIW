@@ -1,0 +1,27 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    justify-content: start;
+    
+}
+
+
+.div1{
+    background-color: pink;
+    padding: 50px;
+    order: 3;
+    justify-self: end;
+    
+}
+
+.div2{
+    background-color: aqua;
+    padding: 50px;
+    order: 1; 
+}
+
+.div3{
+    background-color: coral;
+    padding: 50px;
+    order: 2; 
+}
