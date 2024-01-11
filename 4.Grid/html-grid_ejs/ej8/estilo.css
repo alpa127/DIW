@@ -6,9 +6,8 @@
     width: 100%;
 }
 .divP{
-    content: " ";
-    clear: both;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
 }
 .divimg{
     /* float: left; */
@@ -22,7 +21,8 @@ img{
 .footer{
     background-color: grey; 
     padding: 15px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-between;
 }
 /* .p1{

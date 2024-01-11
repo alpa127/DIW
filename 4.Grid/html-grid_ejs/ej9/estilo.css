@@ -2,17 +2,20 @@
     box-sizing: border-box;
 }
 .cajaP{
-    display: flex;
+    display: grid;
     justify-content: space-between;
-    flex-basis: 100%;
+    grid-template-columns: auto auto auto auto 1fr;
     background-color: rgb(58, 58, 58);
 }
-.menus{
-    display: flex;
-}
+
 .menu{
     /* float: left; */
     padding: 15px;
+}
+
+.salir{
+    padding: 15px;
+    justify-self: end;
 }
 .menu:hover,
 .salir:hover{
