@@ -7,7 +7,7 @@
 }
 .divP{
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
 .divimg{
     /* float: left; */
