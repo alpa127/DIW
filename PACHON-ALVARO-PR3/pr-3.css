@@ -1,0 +1,81 @@
+:root{
+    --color-cajasCab:#E5B25D;
+    --color-Cab:#F2DD6E;
+    --color-barranav:#523A34;
+    --color-textonav:#FFF;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+nav{
+    background-color: var(--color-barranav);
+    display: grid;
+    
+}
+.barra{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+.barra *{
+    color: var(--color-textonav);
+    text-align: center;
+    padding: 10px;
+}
+
+.barra :hover{
+    background-color: var(--color-textonav);
+}
+
+.barra *:hover{
+    color: var(--color-barranav);
+}
+
+
+
+
+
+
+
+
+/*MEDIA QUERYS*/
+@media only screen and (min-width: 950px) {
+    
+header{
+    display: grid;
+    grid-template-areas: 
+    "izq . centro . der"
+    ". . centro . .";
+    background-color: var(--color-Cab);
+}
+
+header :nth-child(1){
+    grid-area: izq;
+    background-color: var(--color-cajasCab);
+    justify-self: self-start;
+    padding: 10px;
+}
+header :nth-child(2){
+    grid-area: centro;
+    background-color: var(--color-Cab);
+}
+header :nth-child(3){
+    grid-area: der;
+    background-color: var(--color-cajasCab);
+    justify-self: self-end;
+    padding: 10px;
+}
+.barra{
+    width: 850px;
+}
+nav{
+    background-color: var(--color-barranav);
+    display: grid;
+    justify-content: center;
+}
+}
+
