@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <div id="container">
+        <p class="primero">1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+
+    <input id="mi-boton" type="button" value="Enviar">
+
+    <input type="text" id="textbox">
+
+    <script>
+        $(function () {
+
+        });
+
+        // $(selector).on("click", function () {
+
+        // });
+
+        $("#mi-boton").click(function (event) {
+            console.log(event);
+        });
+
+
+        $(document).ready(function () {
+            $("#textbox").on("keydown", function () {
+                console.log("keydown event");
+            });
+            $("#textbox").on("keyup", function () {
+                console.log("keyup event");
+            });
+        }); 
+    </script>
+
+</body>
+
+</html>
