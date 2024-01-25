@@ -115,8 +115,8 @@ main{
 .zonaCajas{
     display: grid;
     grid-template-areas: 
-    'cajaCoral cajaVerde cajaVerde'
-    'cajaCoral cajaVerde cajaVerde'
+    'cajaCoral cajaVerde cajaVerde cajaVerde cajaVerde'
+    'cajaCoral cajaVerde cajaVerde cajaVerde cajaVerde'
     'CajaCoral . cajaAzul . CajaGris'
     'cajaSalmon . CajaAzul . CajaAmarillo';
 }
