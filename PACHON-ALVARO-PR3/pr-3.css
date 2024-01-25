@@ -65,35 +65,45 @@ nav{
     
 }
 
+header{
+    background-color: var(--color-Cab);
+}
+
+header :nth-child(1){
+    background-color: var(--color-cajasCab);
+}
 
 
+
+header :nth-child(3){
+    background-color: var(--color-cajasCab);
+}
 
 
 
 /*MEDIA QUERYS*/
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 900px) {
     
 header{
     display: grid;
     grid-template-areas: 
     "izq . centro . der"
     ". . centro . .";
-    background-color: var(--color-Cab);
+  
 }
 
 header :nth-child(1){
     grid-area: izq;
-    background-color: var(--color-cajasCab);
     justify-self: self-start;
     padding: 10px;
 }
 header :nth-child(2){
     grid-area: centro;
-    background-color: var(--color-Cab);
+   
 }
 header :nth-child(3){
     grid-area: der;
-    background-color: var(--color-cajasCab);
+    
     justify-self: self-end;
     padding: 10px;
 }
@@ -108,17 +118,19 @@ nav{
 
 main{
     display: grid;
-   grid-template-columns: 70% 20%;
+    grid-template-columns: auto 300px;
 
 }
 
 .zonaCajas{
+    height: 300px;
+    padding: 10px;
     display: grid;
     grid-template-areas: 
     'cajaCoral cajaVerde cajaVerde cajaVerde cajaVerde'
     'cajaCoral cajaVerde cajaVerde cajaVerde cajaVerde'
-    'CajaCoral . cajaAzul . CajaGris'
-    'cajaSalmon . CajaAzul . CajaAmarillo';
+    'cajaCoral . cajaAzul . cajaGris'
+    'cajaSalmon . cajaAzul . cajaAmarillo';
 }
 
 .cajaCoral{
@@ -148,10 +160,21 @@ main{
 
 .zonaFotos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    padding: 5px;
+    
 }
 
+.zonaFotos div * {
+    width: 100%;
+    padding: 5px;
+}
 
+}
 
+@media only screen and (min-width: 500px) {
+
+   
+    
 }
 
