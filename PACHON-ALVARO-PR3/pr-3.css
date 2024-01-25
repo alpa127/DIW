@@ -200,7 +200,7 @@ main{
 
     .zonaCajas{
       
-        padding: 5px;
+        padding: 10px;
         display: grid;
         grid-template-areas: 
         'cajaCoral cajaVerde cajaVerde'
