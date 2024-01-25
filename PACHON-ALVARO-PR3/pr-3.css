@@ -99,6 +99,7 @@ header :nth-child(1){
 }
 header :nth-child(2){
     grid-area: centro;
+    justify-self: center;
 }
 header :nth-child(3){
     grid-area: der;
@@ -172,6 +173,28 @@ main{
 
 @media only screen and (min-width: 500px) {
 
+    header{
+        display: grid;
+        grid-template-areas: 
+        'izq der'
+        'centro centro';
+    }
+
+    header :nth-child(1){
+        grid-area: izq;
+        padding: 10px;
+    }
+
+    header :nth-child(2){
+        grid-area: centro;
+        justify-self: center;
+    }
+
+    header :nth-child(3){
+        grid-area: der;
+        text-align: end;
+        padding: 10px;
+    }
    
     
 }
