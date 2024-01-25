@@ -220,15 +220,18 @@ main{
     
     .cajaAzul{
         grid-area: cajaAzul;
+        padding: 5px;
     }
     
     .cajaGris{
         grid-area: cajaGris;
+        
     }
     
     .cajaSalmon{
         grid-area: cajaSalmon;
         align-self: start; 
+        padding: 10px;
     }
     
     .cajaAmarilla{
