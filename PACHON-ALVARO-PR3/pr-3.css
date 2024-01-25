@@ -79,6 +79,48 @@ header :nth-child(3){
     background-color: var(--color-cajasCab);
 }
 
+header{
+    display: grid;
+    grid-template-areas: 
+    'izq der'
+    'centro centro';
+}
+
+header :nth-child(1){
+    grid-area: izq;
+    padding: 10px;
+}
+
+header :nth-child(2){
+    grid-area: centro;
+    justify-self: center;
+}
+
+header :nth-child(3){
+    grid-area: der;
+    text-align: end;
+    padding: 10px;
+}
+
+main{
+    display: grid;
+    
+}
+
+.zonaCajas{
+    padding: 10px;
+}
+
+.zonaFotos{
+    width: 100%;
+    padding: 10px;
+}
+
+.zonaFotos div * {
+    width: 100%;
+    padding-bottom: 10px;
+    
+}
 
 
 /*MEDIA QUERYS*/
@@ -173,28 +215,7 @@ main{
 
 @media only screen and (min-width: 500px ) and (max-width: 900px) {
 
-    header{
-        display: grid;
-        grid-template-areas: 
-        'izq der'
-        'centro centro';
-    }
-
-    header :nth-child(1){
-        grid-area: izq;
-        padding: 10px;
-    }
-
-    header :nth-child(2){
-        grid-area: centro;
-        justify-self: center;
-    }
-
-    header :nth-child(3){
-        grid-area: der;
-        text-align: end;
-        padding: 10px;
-    }
+    
 
    
 
@@ -212,20 +233,23 @@ main{
     
     .cajaCoral{
         grid-area: cajaCoral;
+        padding: 10px;
     }
     
     .cajaVerde{
         grid-area: cajaVerde;
+        padding: 10px;
     }
     
     .cajaAzul{
         grid-area: cajaAzul;
-        padding: 5px;
+        padding: 10px;
+        
     }
     
     .cajaGris{
         grid-area: cajaGris;
-        
+        padding: 10px;
     }
     
     .cajaSalmon{
@@ -236,14 +260,30 @@ main{
     
     .cajaAmarilla{
         grid-area: cajaAmarillo;
+        padding: 10px;
     }
    
 
     .zonaFotos{
         display: grid;
-        padding: 5px;
-        grid-template-rows: 1fr auto;
+        padding: 5px;   
+        grid-template-areas: 
+        'perro perro ciudad ciudad'
+        '. dienteleon dienteleon .';
+      
         
+    }
+
+    .imagenPerro{
+        grid-area: perro;
+    }
+
+    .imagenCiudad{
+        grid-area: ciudad;
+    }
+
+    .imagenDienteLeon{
+        grid-area: dienteleon;        
     }
 
     .zonaFotos div * {
