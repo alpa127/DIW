@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#contadorLetras").val(function (e) {
+            $("#texter").val().length;
+        })
+    });
+</script>
+
+<body>
+    <textarea name="texter" id="texter" cols="30" rows="10"></textarea>
+    <div id="contadorLetras"></div>
+
+</body>
+
+</html>
