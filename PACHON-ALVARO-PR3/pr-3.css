@@ -171,7 +171,7 @@ main{
 
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 500px ) and (max-width: 900px) {
 
     header{
         display: grid;
@@ -194,6 +194,47 @@ main{
         grid-area: der;
         text-align: end;
         padding: 10px;
+    }
+
+    main{
+       
+    
+    }
+
+    .zonaCajas{
+      
+        padding: 10px;
+        display: grid;
+        grid-template-areas: 
+        'cajaCoral cajaVerde cajaVerde cajaVerde cajaVerde'
+        'cajaCoral cajaAzul cajaAzul cajaGris cajaGris'
+        'cajaCoral cajaSalmon cajaSalmon cajaAmarillo cajaAmarillo'
+        'cajaCoral . . cajaAmarillo cajaAmarillo';
+    }
+    
+    .cajaCoral{
+        grid-area: cajaCoral;
+    }
+    
+    .cajaVerde{
+        grid-area: cajaVerde;
+    }
+    
+    .cajaAzul{
+        grid-area: cajaAzul;
+    }
+    
+    .cajaGris{
+        grid-area: cajaGris;
+    }
+    
+    .cajaSalmon{
+        grid-area: cajaSalmon;
+        
+    }
+    
+    .cajaAmarilla{
+        grid-area: cajaAmarillo;
     }
    
     
