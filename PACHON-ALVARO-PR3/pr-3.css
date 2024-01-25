@@ -35,7 +35,35 @@ nav{
     color: var(--color-barranav);
 }
 
+.cajaCoral{
+    background-color: lightcoral;
+    
+}
 
+.cajaVerde{
+    background-color: lightgreen;
+    
+}
+
+.cajaAzul{
+    background-color: lightblue;
+   
+}
+
+.cajaGris{
+    background-color: lightgray;
+    
+}
+
+.cajaSalmon{
+    background-color: lightsalmon;
+   
+}
+
+.cajaAmarilla{
+    background-color: lightyellow;
+    
+}
 
 
 
@@ -77,5 +105,53 @@ nav{
     display: grid;
     justify-content: center;
 }
+
+main{
+    display: grid;
+   grid-template-columns: 70% 20%;
+
+}
+
+.zonaCajas{
+    display: grid;
+    grid-template-areas: 
+    'cajaCoral cajaVerde cajaVerde'
+    'cajaCoral cajaVerde cajaVerde'
+    'CajaCoral . cajaAzul . CajaGris'
+    'cajaSalmon . CajaAzul . CajaAmarillo';
+}
+
+.cajaCoral{
+    grid-area: cajaCoral;
+}
+
+.cajaVerde{
+    grid-area: cajaVerde;
+}
+
+.cajaAzul{
+    grid-area: cajaAzul;
+}
+
+.cajaGris{
+    grid-area: cajaGris;
+}
+
+.cajaSalmon{
+    grid-area: cajaSalmon;
+}
+
+.cajaAmarilla{
+    grid-area: cajaAmarillo;
+}
+
+
+.zonaFotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
 }
 
