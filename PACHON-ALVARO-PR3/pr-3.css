@@ -99,11 +99,9 @@ header :nth-child(1){
 }
 header :nth-child(2){
     grid-area: centro;
-   
 }
 header :nth-child(3){
     grid-area: der;
-    
     justify-self: self-end;
     padding: 10px;
 }
