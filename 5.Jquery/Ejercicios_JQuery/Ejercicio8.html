@@ -24,7 +24,7 @@
     <script>
         $(document).ready(function () {
             $("input").on("change", function () {
-                mensaje = mensaje + $("#message").text($(this).val());
+                mensaje += $("#message").text($(this).val());
             })
         });
     </script>
