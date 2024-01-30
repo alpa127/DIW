@@ -23,9 +23,12 @@
 
     <script>
         $(document).ready(function () {
-            $("input").on("change", function () {
-                mensaje += $("#message").text($(this).val());
-            })
+            var mensaje = "";
+            $("input").each(function () {
+                if ($(this).prop("checked") == true) {
+                    $("message").text($(this).val());
+                }
+            });
         });
     </script>
 
