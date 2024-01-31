@@ -22,6 +22,7 @@
         $(document).ready(function () {
 
             $("#submit-btn").on("click", function (e) {
+                $("#alert").slideUp("slow");
                 var usernameValue = $.trim($("#username").val());
                 var passwordValue = $.trim($("#username").val());
                 var div1 = document.createElement("div");
@@ -31,11 +32,11 @@
                 $("#alert").text("");
                 if (usernameValue.length == 0 || passwordValue.length == 0) {
                     e.preventDefault();
-                    $("#alert").text("Por favor, Rellene todos los campos");
-                    $("#alert").slideDown(400);
+                    $("#alert").text("Por favor, Rellene todos los campos").slideDown();
+
                 } else {
                     $("#alert").text("");
-                    $("#alert").slideUp(400);
+
                 }
             });
 
