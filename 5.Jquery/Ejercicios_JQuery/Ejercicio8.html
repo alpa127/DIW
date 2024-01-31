@@ -8,13 +8,13 @@
 </head>
 
 <body>
-    <input type="radio" id="audi" name="brand" value="Audi">
+    <input type="checkbox" id="audi" name="brand" value="Audi">
     <label for="audi">Audi</label>
 
-    <input type="radio" id="mercedes" name="brand" value="Mercedes">
+    <input type="checkbox" id="mercedes" name="brand" value="Mercedes">
     <label for="mercedes">Mercedes</label>
 
-    <input type="radio" id="hyundai" name="brand" value="Hyundai">
+    <input type="checkbox" id="hyundai" name="brand" value="Hyundai">
     <label for="hyundai">Hyundai</label>
 
     <p id="message"></p>
@@ -23,13 +23,14 @@
 
     <script>
         $(document).ready(function () {
-            var mensaje = "";
-            $("input").change
-            $("input").each(function () {
-                if ($(this).prop("checked") == true) {
-                    $("message").text($(this).val());
-                }
-            });
+            $("input").on("change", function () {
+                $("#message").text("");
+                $("input").each(function () {
+                    if ($(this).prop("checked") == true) {
+                        $("#message").append($(this).val() + " ");
+                    }
+                })
+            })
         });
     </script>
 

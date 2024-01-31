@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio11</title>
+</head>
+
+<body>
+    <select id="brands">
+        <option value="audi">Audi</option>
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="hyundai">Hyundai</option>
+    </select>
+    <div id="resultado"></div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var linea = 0;
+            $("#brands").on("change", function () {
+                linea++
+                var valor = $.trim($(this).val());
+                $("#resultado").append("<br>" + linea + ". has seleccionado " + valor + "<br>");
+            })
+        });
+    </script>
+
+
+</body>
+
+</html>

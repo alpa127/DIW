@@ -23,7 +23,7 @@
 
     <script>
         $(document).ready(function () {
-            $("input").on("change", function () {
+            $("input[name='brand']").on("change", function () {
                 $("#message").text($(this).val());
             })
         });
