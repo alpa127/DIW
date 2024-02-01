@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="formulario-registro">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+
+        <div>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos">
+        </div>
+
+        <div>
+            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+        </div>
+
+        <div>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="sexo-hombre" name="sexo" value="hombre">
+            <label for="sexo-hombre">Hombre</label>
+            <input type="radio" id="sexo-mujer" name="sexo" value="mujer">
+            <label for="sexo-mujer">Mujer</label>
+        </div>
+        <input type="submit" value="Registrarse">
+
+    </form>
+    <div id="mensaje-registro"></div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#formulario-registro").submit(function (event) {
+                event.preventDefault();
+
+                var nombre = $("#nombre").val();
+                var apellidos = $("#apellidos").val();
+                var fechaNacimiento = $("#fecha-nacimiento").val();
+                var sexo = $("input[name='sexo']:checked").val();
+
+                $.ajax({
+                    url: "registro.php",
+                    type: "GET",
+                    data: {
+                        nombre: nombre,
+                        apellidos: apellidos,
+                        fechaNacimiento: fechaNacimiento,
+                        sexo: sexo
+                    },
+                    success: function (data) {
+                        var respuesta = JSON.parse(data);
+                        if (respuesta.error == 0) {
+                            $("#mensaje-registro").html("Registro completado");
+                        } else {
+                            $("#mensaje-registro").html("Error " + respuesta.error + ": " +
+                                respuesta.error_msg);
+                        }
+                    }
+                });
+            });
+        }); 
+    </script>
+
+</body>
+
+</html>
