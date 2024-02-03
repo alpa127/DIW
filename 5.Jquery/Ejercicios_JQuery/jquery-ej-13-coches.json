@@ -1,0 +1,11 @@
+[{"marca":"BMW","coches":[{"modelo":"Serie 3","color":"Negro","precio":"45.000 €"},
+{"modelo":"Serie 5","color":"Blanco","precio":"55.000 €"},
+{"modelo":"Serie 7","color":"Gris","precio":"75.000 €"}]},
+{"marca":"Mercedes","coches":[{"modelo":"Clase C","color":"Negro","precio":"40.000 €"},
+{"modelo":"Clase E","color":"Rojo","precio":"60.000 €"},
+{"modelo":"Clase S","color":"Gris","precio":"80.000 €"}]},
+{"marca":"Audi","coches":[{"modelo":"A4","color":"Negro","precio":"35.000 €"},
+{"modelo":"A6","color":"Azul","precio":"50.000 €"},
+{"modelo":"A8","color":"Gris","precio":"70.000 €"}]},
+{"marca":"Volkswagen","coches":[{"modelo":"Golf","color":"Negro","precio":"20.000 €"},
+{"modelo":"Passat","color":"Rojo","precio":"30.000 €"},{"modelo":"Arteon","color":"Blanco","precio":"40.000 €"}]}]

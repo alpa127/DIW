@@ -215,10 +215,6 @@ main{
 
 @media only screen and (min-width: 500px ) and (max-width: 900px) {
 
-    
-
-   
-
     .zonaCajas{
       
         padding: 10px;
@@ -228,7 +224,7 @@ main{
         'cajaCoral cajaAzul cajaGris'
         'cajaCoral cajaSalmon cajaGris'
         'cajaCoral cajaSalmon cajaAmarillo';
-        grid-template-rows: max-content;
+        grid-template-columns: max-content, repeat(4,auto);
     }
     
     .cajaCoral{

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+
+<body>
+    <div id="padre" style="border: 1px solid black; padding: 5px">
+        <input class="verde" type="text" value="Verde"><br>
+        <input class="azul" type="text" value="Azul"><br>
+    </div>
+
+    <input class="verde" type="text" value="Verde">
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Reciben el foco 
+            $(".verde").on("focus", function () {
+                console.log("Evento focus en verde");
+            });
+            $("#padre").on("focusin", function () {
+                console.log("Evento focusin en el padre");
+            });
+
+            // Pierden el foco 
+            $(".verde").on("blur", function () {
+                console.log("Evento blur en verde");
+            });
+            $("#padre").on("focusout", function () {
+                console.log("Evento focusout en el padre");
+            });
+        }); 
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" id="boton" value="Cargar HTML externo">
+    <div id="cargaexterna" style="border: 1px solid black">Aquí se cargará el HTML
+        externo</div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#boton").click(function () {
+                $.ajax({
+                    method: "GET",
+                    url: "mi-otra-pagina.php",
+                    success: function (data, textStatus, jqXHR) {
+                        $("#cargaexterna").html(data);
+                    },
+                    data: { coche: "Ford", modelo: "Focus", color: "rojo" },
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="checkbox" id="audi" name="brand" value="Audi">
+    <label for="audi">Audi</label>
+
+    <input type="checkbox" id="mercedes" name="brand" value="Mercedes">
+    <label for="mercedes">Mercedes</label>
+
+    <input type="checkbox" id="hyundai" name="brand" value="Hyundai">
+    <label for="hyundai">Hyundai</label>
+
+    <p id="message"></p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("input").on("change", function () {
+                $("#message").text("");
+                $("input").each(function () {
+                    if ($(this).prop("checked") == true) {
+                        $("#message").append($(this).val() + " ");
+                    }
+                })
+            })
+        });
+    </script>
+
+</body>
+
+</html>
