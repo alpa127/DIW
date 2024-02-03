@@ -129,8 +129,8 @@ main{
 header{
     display: grid;
     grid-template-areas: 
-    "izq . centro . der"
-    ". . centro . .";
+    "izq  centro  der"
+    ".  centro  .";
   
 }
 
@@ -267,23 +267,24 @@ main{
     .zonaFotos{
         display: grid;
         padding: 5px;   
-        grid-template-areas: 
-        'perro perro ciudad ciudad'
-        '. dienteleon dienteleon .';
-      
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
         
     }
 
     .imagenPerro{
-        grid-area: perro;
+        grid-column-start: 1;  
+        grid-column-end: 3;  
     }
 
     .imagenCiudad{
-        grid-area: ciudad;
+        grid-column-start: 3;  
+        grid-column-end: 5;  
     }
 
     .imagenDienteLeon{
-        grid-area: dienteleon;        
+        grid-column-start: 2;  
+        grid-column-end: 4;     
     }
 
     .zonaFotos div * {
