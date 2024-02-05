@@ -21,8 +21,17 @@
                     url: "jquery-ej-13-coches.json",
                     type: "GET",
                     success: function (data) {
-                        data.forEach((item, index) => {
-                            $("#respuesta").html()
+                        $.each(data, function (index, value) {
+                            $("#respuesta").before("<br>" + (index + 1) + " " +
+                                value.marca);
+                            $.each(value.coches, function (index1, value1) {
+                                $("#respuesta").before("<div>" +
+                                    +(index1 + 1) + " " + value1.modelo + ", " +
+                                    "" + value1.color + ", " +
+                                    "" + value1.precio + "</div></div>"
+                                );
+                            });
+
 
                         });
                     }
