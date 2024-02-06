@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Formulario de Entrantes</h2>
+    <form id="form-entrantes">
+        <label for="select-entrantes">Entrantes:</label>
+        <select id="select-entrantes">
+            <option value="none" selected>Selecciona entrante</option>
+            <option value="patatas">Patatas Fritas</option>
+            <option value="nuggets">Nuggets de Pollo</option>
+        </select><br><br>
+
+        <div id="salsas" style="display: none; padding: 0.5em; border: 1px solid 
+#333"></div><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <div id="error" style="color: red;"></div>
+    <div id="resultado" style="color: green;"></div>
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#select-entrantes").on("change", function () {
+                var valor = $.trim($(this).val());
+
+                if (valor == "none") {
+                    $("#error").slideDown();
+                    $("#error").text("No se ha seleccionado ninguna opcion");
+                    $("#salsas").slideUp();
+                }
+
+                if (valor == "patatas") {
+
+                    $("#salsas").load("patatas.html", cargar());
+                    $("#error").slideUp();
+                }
+
+                if (valor == "nuggets") {
+
+                    $("#salsas").load("nuggets.html", cargar());
+                    $("#error").slideUp();
+                }
+            })
+
+            function cargar() {
+                $("#salsas").slideUp();
+                $("#salsas").slideDown();
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

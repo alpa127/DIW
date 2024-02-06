@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        header {
+            background-color: lightblue;
+            height: 100px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr minmax(200px, auto);
+        }
+
+        section {
+            background-color: lightcoral;
+            min-height: 200px;
+        }
+
+        aside {
+            background-color: lightgoldenrodyellow;
+        }
+
+        footer {
+            background-color: lightgreen;
+            height: 100px;
+        }
+    </style>
+
+    <header>header</header>
+    <main>
+        <section>section</section>
+        <aside id="res">aside</aside>
+    </main>
+    <footer>footer</footer>
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#res").load("Ejercicio16_res.html", function () {
+                setInterval(cargarPagina, 5000);
+            });
+            function cargarPagina() {
+                $("#res").load("Ejercicio16_res.html", function () {
+                    $("#res").fadeIn();
+                    $("#res").hide();
+                });
+            }
+
+        });
+
+
+
+
+    </script>
+
+</body>
+
+</html>

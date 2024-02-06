@@ -22,13 +22,13 @@
                     type: "GET",
                     success: function (data) {
                         $.each(data, function (index, value) {
-                            $("#respuesta").before("<br>" + (index + 1) + " " +
+                            $("#respuesta").before("<ul>" + (index + 1) + " " +
                                 value.marca);
                             $.each(value.coches, function (index1, value1) {
-                                $("#respuesta").before("<div>" +
+                                $("#respuesta").before("<ul><ul><li>" +
                                     +(index1 + 1) + " " + value1.modelo + ", " +
                                     "" + value1.color + ", " +
-                                    "" + value1.precio + "</div></div>"
+                                    "" + value1.precio + "</li></ul></ul></ul>"
                                 );
                             });
 
