@@ -64,7 +64,16 @@
 
         });
 
+
+
         $(document).ready(function () {
+
+            $('div').on("change", function () {
+                if ($('input[type="radio"]:checked')) {
+                    $('div span').remove();
+                    $('div:has(input[type="radio"]:checked)').append("<span style='color:green;'>✓</span>");
+                }
+            });
 
             $("#form-entrantes").on("submit", function (e) {
                 e.preventDefault();
@@ -74,6 +83,12 @@
                     $("#error").text("No se ha seleccionado ninguna opcion");
                 } else {
                     var $salsaSeleccionada = $('input[name="salsa"]:checked');
+                    $('div').on("change", function () {
+                        if ($('input[name="salsa"]:checked')) {
+                            $('div span').remove();
+                            $('div:has(input[name="salsa"]:checked)').append("<span style='color:green;'>✓</span>");
+                        }
+                    });
 
                     if ($salsaSeleccionada.length === 0) {
                         $("#error").slideDown();
