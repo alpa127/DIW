@@ -67,11 +67,11 @@
 
 
         $(document).ready(function () {
-
+        
             $('div').on("change", function () {
                 if ($('input[type="radio"]:checked')) {
                     $('div span').remove();
-                    $('div:has(input[type="radio"]:checked)').append("<span style='color:green;'>✓</span>");
+                    $('div div:has(input[type="radio"]:checked)').append("<span style='color:green;'>✓</span>");
                 }
             });
 
