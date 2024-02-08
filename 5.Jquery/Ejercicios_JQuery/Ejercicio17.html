@@ -30,15 +30,17 @@
     <script src="jquery-3.7.1.min.js"></script>
 
     <script>
+
+
         $(document).ready(function () {
 
             $("#select-entrantes").on("change", function () {
                 var valor = $.trim($(this).val());
 
                 if (valor == "none") {
-                    $("#error").slideDown();
-                    $("#error").text("No se ha seleccionado ninguna opcion");
+                    $("#resultado").slideUp();
                     $("#salsas").slideUp();
+                    $("#error").slideUp();
                 }
 
                 if (valor == "patatas") {
@@ -55,10 +57,35 @@
             })
 
             function cargar() {
+                $("#salsas").hide();
                 $("#salsas").slideUp();
                 $("#salsas").slideDown();
             }
 
+        });
+
+        $(document).ready(function () {
+
+            $("#form-entrantes").on("submit", function (e) {
+                e.preventDefault();
+                if ($("#select-entrantes").val() == 'none') {
+                    $("#resultado").slideUp();
+                    $("#error").slideDown();
+                    $("#error").text("No se ha seleccionado ninguna opcion");
+                } else {
+                    var $salsaSeleccionada = $('input[name="salsa"]:checked');
+
+                    if ($salsaSeleccionada.length === 0) {
+                        $("#error").slideDown();
+                        $("#error").text("Por favor, selecciona una salsa");
+                    } else {
+                        $("#error").slideUp();
+                        $("#resultado").slideDown();
+                        $("#resultado").text("Has seleccionado " + $("#select-entrantes").val() +
+                            " con " + $salsaSeleccionada.val());
+                    }
+                }
+            });
         });
 
     </script>
