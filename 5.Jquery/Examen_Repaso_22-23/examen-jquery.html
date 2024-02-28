@@ -22,7 +22,7 @@
     // Escribe aquí tu código
     $(document).ready(function () {
 
-      $("#btn-carga").on("click", function () {
+      $("#btn-carga").on("click", function (response, status, xhr) {
 
         if (status == "error") {
           alert("Error al cargar");
