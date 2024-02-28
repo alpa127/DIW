@@ -22,16 +22,18 @@
     // Escribe aquí tu código
     $(document).ready(function () {
 
-      $("#btn-carga").on("click", function (response, status, xhr) {
+      $("#btn-carga").on("click", function () {
+        $("#formulario-container").load("formulario.html", function (response, status, xhr) {
+          if (status == "success") {
+            $("#formulario-container").css("margin", "2px");
+            $("#formulario-container").css("border", "2px solid black");
+            $("#formulario-container").css("padding", "1rem");
+            $("#formulario-container").load("formulario.html", cargar());
+          } else {
+            alert("Error al cargar");
+          }
+        });
 
-        if (status == "error") {
-          alert("Error al cargar");
-        } else {
-          $("#formulario-container").css("margin", "2px");
-          $("#formulario-container").css("border", "2px solid black");
-          $("#formulario-container").css("padding", "1rem");
-          $("#formulario-container").load("formulario.html", cargar());
-        }
       });
 
       function cargar() {
