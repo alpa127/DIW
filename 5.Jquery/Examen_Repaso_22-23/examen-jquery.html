@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023-03-06. jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <input type="button" id="btn-carga" value="Cargar formulario">
+  <div id="formulario-container"></div>
+
+
+
+  <script src="jquery-3.7.1.min.js"></script>
+
+  <script>
+    // Escribe aquí tu código
+    $(document).ready(function () {
+
+      $("#btn-carga").on("click", function () {
+
+        if (status == "error") {
+          alert("Error al cargar");
+        } else {
+          $("#formulario-container").css("border", "2px solid black");
+          $("#formulario-container").css("padding", "1rem");
+          $("#formulario-container").load("formulario.html", cargar());
+        }
+      });
+
+      function cargar() {
+        $("#formulario-container").slideUp();
+        $("#formulario-container").slideDown();
+      }
+
+      $("#formulario-container").on("focus", "input[type='password']", function () {
+        $(this).css("background-color", "lightgreen");
+      });
+
+      $("#formulario-container").on("focusout", "input[type='password']", function () {
+        var valorInput = $(this).val().length;
+        if (valorInput < 8) {
+          $(this).css("background-color", "red");
+          $("#caracter").remove();
+          $(this).after("<span id='caracter'>Minimo 8 caracteres</span>");
+        } else {
+          $(this).css("background-color", "lightgreen");
+          $("#caracter").remove();
+        }
+      });
+    });
+
+
+  </script>
+
+</body>
+
+</html>
