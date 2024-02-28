@@ -4,21 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio1_Jquery</title>
 </head>
 <script src="jquery-3.7.1.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $("#texter").on("input", function (e) {
-            $("#contadorPalabras").val().length;
-        })
-    });
-</script>
+
 
 <body>
-    <textarea name="texter" id="texter" cols="30" rows="10"></textarea>
-    <div id="contadorLetras"></div>
+    <textarea id="texter" cols="30" rows="10"></textarea>
+    <div id="contadorLetras">Número de caracteres: <span>0</span></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#texter").on("input", function () {
+                $("#contadorLetras > span").text($(this).val().length);
+            })
+        });
+    </script>
 
 </body>
+
 
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3_Jquery</title>
+
+    <style>
+        .sinalt {
+          border: 10px solid red;
+        }
+      </style>
+</head>
+<script src="jquery-3.7.1.min.js"></script>
+<body>
+
+    <img src="https://picsum.photos/180" alt="">
+
+    <img src="https://picsum.photos/180" alt="">
+
+    <img src="https://picsum.photos/180">
+
+    <img src="https://picsum.photos/180" alt="Soy un texto">
+
+    <script>
+        $(document).ready(function () {
+            $("img").each(function(){
+                if(!$(this).attr("alt") || $(this).attr().trim() === ''){
+                    $(this).addClass("sinalt");
+                }
+            })
+        });
+    </script>
+    
+</body>
+</html>
