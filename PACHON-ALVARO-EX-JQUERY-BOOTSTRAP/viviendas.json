@@ -1,0 +1,16 @@
+{
+  "viviendas": [
+    {
+      "precio": "500 €",
+      "direccion": "Calle de la Ilusión 123."
+    },
+    {
+      "precio": "750 €",
+      "direccion": "Avenida de los Sueños 456."
+    },
+    {
+      "precio": "400 €",
+      "direccion": "Plaza de la Imaginación 789."
+    }
+  ]
+}

@@ -21,6 +21,7 @@
                     url: "jquery-ej-13-coches.json",
                     type: "GET",
                     success: function (data) {
+
                         $.each(data, function (index, value) {
                             $("#respuesta").before("<ul>" + (index + 1) + " " +
                                 value.marca);
