@@ -36,7 +36,7 @@
             <div class="mt-2 mb-2">
               <label for="range1" class="form-label">Precio máximo: <span id="precio"
                   class="badge bg-primary text-black"></span></label>
-              <input type="range" class="form-range" min="0" max="1000" step="50" id="range1">
+              <input type="range" class="form-range" min="0" max="1000" step="50" value="1000" id="range1">
             </div>
 
             <div class="mb-2">
@@ -93,7 +93,7 @@
           </form>
         </div>
         <div class="col-sm-6 col-md-8 mt-2">
-          <div class="col-auto form-control">
+          <div class="col-auto form-control ">
             <h3 id="res">Resultados:</h3>
             <div id="viviendas"></div>
           </div>
@@ -115,15 +115,17 @@
 
       $("#enviar").on("click", function () {
         if ($("#poblacion").val() === "") {
+          $("#parrafo").remove();
           $("#poblacion").after("<p id='parrafo' class='text-danger'>Indica una población</p>");
         } else {
           $("#parrafo").remove();
           $.ajax({
             url: "viviendas.json",
             type: "GET",
+
             success: function (data) {
 
-              var html = "<ol>";
+              var html = "";
               $.each(data, function (index, value) {
 
                 if (index == 0) {
@@ -133,12 +135,13 @@
                   $("#viviendas").html("<div class='alert alert-success' role='alert'>Hemos encontrado las siguientes viviendas para ti</div>");
 
 
-                  $.each(value.viviendas, function (index1, value1) {
+                  $.each(value, function (index1, value1) {
 
-                    html += index1 + "<li>Direccion" + value1.direccion + ",Precio:" + value1.precio + "</li>";
+                    html += "<ul><li>" + index1 + "Direccion" + value1.direccion + ",Precio:" + value1.precio + "</li></ul>";
+
                   });
-                  html += "</ol>";
-                  html += "</ol>";
+
+
                   $("#viviendas").append(html);
                 }
               });

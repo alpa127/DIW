@@ -1,5 +1,8 @@
 $(document).ready(function () {
+    
     setTimeout(function () {
-        $("#aviso").show();
+        $("#aviso").toast("show");
     }, 3000);
+
+  
 });
